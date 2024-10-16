@@ -7,6 +7,7 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
 <section id="<?php echo $mySectionID; ?>" class="<?php echo esc_attr($className); ?>">
     <div class="container">
         <div class="offer-boxes-wrapper">
+
             <div class="tab-title-wrapper">
                 <?php if (!empty(get_field('title'))) { ?>
                     <div class="tab-title">
