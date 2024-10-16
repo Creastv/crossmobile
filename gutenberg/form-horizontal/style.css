@@ -1,0 +1,217 @@
+.cta-form-horizontal {
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.cta-form-horizontal .custom-icon {
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 4;
+    pointer-events: none;
+}
+
+.cta-form-horizontal .cta-form-horizontal-wrapper {
+    border-radius: 20px;
+    background: #F2F2F2;
+    padding: 35px 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.cta-form-horizontal .cta-form-menu-wrapper h2 {
+    margin-bottom: 16px;
+    max-width: 75;
+}
+
+.cta-form-horizontal .cta-form-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.cta-form-horizontal .cta-form-menu a {
+    text-transform: uppercase;
+}
+
+.cta-form-horizontal .cta-form-menu-wrapper {
+    width: 45%;
+}
+
+.cta-form-horizontal .cta-form-wrapper {
+    border-radius: 20px;
+    background: #FFBC40;
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.cta-form-horizontal .cta-form {
+    padding: 10px 30px 10px 10px;
+}
+
+.cta-form-horizontal .cta-form h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cta-form-horizontal .contact-form {
+    margin-top: 20px;
+}
+
+.cta-form-horizontal .cta-form-wrapper>img {
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.cta-form-horizontal input.wpcf7-text {
+    border-radius: 100px;
+    padding: 16px 27px;
+    outline: 0;
+    border: 1px solid var(--black, #291B22);
+    background: #FFF;
+    box-shadow: 0px 5px 0px 0px var(--black, #291B22);
+    max-width: 100%;
+    width: 100%;
+}
+
+.cta-form-horizontal .wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cta-form-horizontal .wpcf7-form-control-wrap {
+    width: 100%;
+}
+
+.cta-form-horizontal .wpcf7-form-control-wrap[data-name="phone"] {
+    width: 65%;
+}
+
+.cta-form-horizontal .wpcf7-form-control.wpcf7-submit {
+    width: 35%;
+    border-radius: 106.878px;
+    border: 1.069px solid var(--black, #291B22);
+    background: var(--Color, #E81F76);
+    box-shadow: 0px 5px 0px 0px var(--black, #291B22);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: -45px;
+    z-index: 4;
+    cursor: pointer;
+    padding: 16px 10px;
+}
+
+.cta-form-horizontal .wpcf7-form-control.wpcf7-acceptance {
+    display: flex;
+    margin-top: 20px;
+}
+
+@media (max-width:1440px) {
+    .cta-form-horizontal .cta-form-wrapper>img {
+        transform: translateX(-11%);
+    }
+
+
+    .cta-form-horizontal .cta-form-wrapper {
+        width: 65%;
+    }
+
+    .cta-form-horizontal .wpcf7-form-control.wpcf7-submit,
+    .cta-form-horizontal .cta-form-menu-wrapper {
+        width: 45%;
+    }
+
+}
+
+@media (max-width:1299px) {
+    .cta-form-horizontal .cta-form-menu-wrapper h2 {
+        max-width: 100%;
+    }
+
+    .cta-form-horizontal .cta-form-wrapper>img {
+        transform: none;
+    }
+
+    .cta-form-horizontal .custom-icon {
+        left: 39%;
+    }
+}
+
+@media (max-width:1199px) {
+    .cta-form-horizontal .cta-form-horizontal-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .cta-form-horizontal .cta-form-wrapper,
+    .cta-form-horizontal .cta-form-menu-wrapper {
+        width: 100%;
+    }
+
+    .cta-form-horizontal .custom-icon {
+        opacity: 0.5;
+    }
+
+    .cta-form-horizontal .cta-form-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        position: relative;
+        padding: 20px 0;
+    }
+
+    .cta-form-horizontal .custom-icon {
+        left: 75%;
+        pointer-events: none;
+    }
+
+    .cta-form-horizontal .cta-form-wrapper>img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+    }
+
+    .cta-form-horizontal .cta-form {
+        margin-right: auto;
+        max-width: 70%;
+    }
+}
+
+@media (max-width:991px) {
+    .cta-form-horizontal .cta-form {
+        max-width: 100%;
+    }
+
+    .cta-form-horizontal .cta-form-wrapper>img {
+        position: relative;
+        right: auto;
+        bottom: -20px;
+        margin-left: auto;
+    }
+
+    .cta-form-horizontal .custom-icon {
+        left: 35%;
+        top: 75%;
+    }
+}
+
+@media (max-width:768px) {
+    .cta-form-horizontal .cta-form {
+        padding: 10px;
+    }
+}
+
+@media (max-width:540px) {
+    .cta-form-horizontal .wpcf7-form-control-wrap[data-name="phone"] {
+        width: 100%;
+    }
+
+    .cta-form-horizontal .wpcf7-form-control.wpcf7-submit {
+        width: 100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,129 @@
+.contact-data {
+    padding: 20px 0 0;
+    position: relative;
+}
+
+.contact-data .contact-data-menu {
+    margin-top: 24px;
+}
+
+.contact-data .contact-data-menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.contact-data .contact-data-menu ul a {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact-data .contact-data-wrapper {
+    display: flex;
+    gap: 30px 84px;
+}
+
+.contact-data .contact-data-info {
+    width: 30%;
+}
+
+.contact-data .contact-data-info {
+    color: #000;
+    font-size: 16px;
+}
+
+.contact-data .contact-data-info *:not(br) {
+    margin-bottom: 15px;
+}
+
+.contact-data .contact-data-block {
+    width: 70%;
+}
+
+.contact-data .contact-data-block h4 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.contact-data .contact-block-inner {
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 1px solid var(--black-50, #C2C2C2);
+    display: flex;
+    gap: 15px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-data .contact-mess {
+    border-radius: 10px;
+    background: #F2F2F2;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 392px;
+}
+
+.contact-data .contact-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-data .contact-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contact-data .contact-links svg {
+    max-width: 65px;
+}
+
+.contact-data .contact-links a {
+    color: #E81F76;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media (max-width:1199px) {
+
+    .contact-data .contact-data-info,
+    .contact-data .contact-data-block {
+        width: 100%;
+    }
+
+    .contact-data .contact-data-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:768px) {
+
+    .contact-data .contact-links a {
+        font-size: 22px;
+    }
+
+    .contact-data .contact-block-inner {
+        padding: 20px 15px;
+    }
+
+    .contact-data .contact-mess {
+        max-width: 100%;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .contact-data .contact-links svg {
+        max-width: 45px;
+    }
+}

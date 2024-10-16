@@ -1,0 +1,218 @@
+.downloads {
+    padding: 40px 0 40px;
+    position: relative;
+}
+
+.downloads .downloads-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.downloads .downloads-sidebar {
+    width: 35%;
+    position: sticky;
+    top: 100px;
+}
+
+.downloads .downloads-main {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.downloads h3 {
+    font-weight: 900;
+    font-size: 31px;
+    margin-bottom: 29px;
+}
+
+.downloads .file-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.downloads .download-single {
+    border-radius: 10px;
+    border: 1px solid var(--black-75, #5C5559);
+    background: #FFF;
+    box-shadow: 0px 4px 0px 0px var(--black-75, #5C5559);
+    padding: 22px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.downloads .download-single p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.downloads .download-single a {
+    color: #E81F76;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: 1px solid var(--Color, #E81F76);
+    padding: 15px 20px;
+    text-align: center;
+    white-space: nowrap;
+    transition: color .3s ease, background .3s ease;
+}
+
+.downloads .download-single a:hover {
+    color: #fff;
+    background-color: #E81F76;
+}
+
+.downloads .contact-block-inner {
+    padding: 15px 24px;
+    border-radius: 20px;
+    border: 1px solid var(--black-50, #C2C2C2);
+    display: flex;
+    gap: 15px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.downloads .contact-block-inner h5 {
+    margin-bottom: 30px;
+}
+
+.downloads .contact-mess {
+    border-radius: 10px;
+    background: #F2F2F2;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 392px;
+}
+
+.downloads .contact-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.downloads .contact-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.downloads .contact-links svg {
+    max-width: 65px;
+}
+
+.downloads .contact-links a {
+    color: #E81F76;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.downloads .downloads-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.downloads .downloads-menu a {
+    text-transform: uppercase;
+}
+
+.downloads .downloads-categories {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 30px;
+    gap: 10px;
+}
+
+.downloads .downloads-categories h5 {
+    color: #000;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    transition: color .3s ease;
+    cursor: pointer;
+}
+
+.downloads .downloads-categories h5:hover {
+    color: #E81F76;
+}
+
+@media (max-width:1199px) {
+    .downloads .downloads-wrapper {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .downloads .downloads-sidebar {
+        position: relative;
+        top: auto;
+        width: 100%;
+    }
+
+    .downloads .downloads-main {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .downloads .contact-links a {
+        font-size: 22px;
+    }
+
+    .downloads .contact-block-inner {
+        padding: 20px 15px;
+    }
+
+    .downloads .contact-mess {
+        max-width: 100%;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .downloads .downloads-sidebar {
+        gap: 60px;
+    }
+
+    .downloads .download-single {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .downloads .download-single a {
+        font-size: 14px;
+    }
+
+    .downloads .contact-block-inner h5 {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width:479px) {
+    .downloads .contact-links a {
+        font-size: 14px;
+    }
+}

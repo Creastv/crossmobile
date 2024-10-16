@@ -1,0 +1,256 @@
+.faq {
+    padding: 40px 0 40px;
+    position: relative;
+}
+
+.faq .faq-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.faq .faq-sidebar {
+    width: 35%;
+    position: sticky;
+    top: 100px;
+}
+
+.faq .faq-main {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.faq h3 {
+    font-weight: 900;
+    font-size: 31px;
+    margin-bottom: 29px;
+}
+
+.faq .faq-questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq .contact-block-inner {
+    padding: 15px 24px;
+    border-radius: 20px;
+    border: 1px solid var(--black-50, #C2C2C2);
+    display: flex;
+    gap: 15px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.faq .contact-block-inner h5 {
+    margin-bottom: 30px;
+}
+
+.faq .contact-mess {
+    border-radius: 10px;
+    background: #F2F2F2;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 392px;
+}
+
+.faq .contact-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq .contact-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.faq .contact-links svg {
+    max-width: 65px;
+}
+
+.faq .contact-links a {
+    color: #E81F76;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.faq .faq-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.faq .faq-menu a {
+    text-transform: uppercase;
+}
+
+.faq .faq-categories {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 30px;
+    gap: 10px;
+}
+
+.faq .faq-categories h5 {
+    color: #000;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    transition: color .3s ease;
+    cursor: pointer;
+}
+
+.faq .faq-categories h5:hover {
+    color: #E81F76;
+}
+
+.faq .faq-single {
+    padding: 36px;
+    border-radius: 10px;
+    border: 1px solid #5C5559;
+    background: #FFF;
+    box-shadow: 0px 4px 0px 0px #5C5559;
+    cursor: pointer;
+}
+
+.faq .faq-single h4 {
+    position: relative;
+    padding-right: 40px;
+}
+
+.faq .faq-single h4 span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq .faq-single h4 span svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.faq .faq-single .fa-vertical {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.faq .faq-single.active .fa-vertical {
+    opacity: 0;
+}
+
+.faq .faq-answer {
+    color: #5C5559;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.faq .faq-answer {
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #C2C2C2;
+    transition: border .3s ease;
+}
+
+@media (max-width:768px) {
+    .faq .faq-wrapper {
+        padding: 15px;
+    }
+
+    .faq .faq-single {
+        padding: 24px;
+    }
+
+    .faq .faq-answer {
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+
+    .faq .faq-single h4 {
+        font-size: 18px;
+    }
+
+    .faq .faq-answer p {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:1199px) {
+    .faq .faq-wrapper {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .faq .faq-sidebar {
+        position: relative;
+        top: auto;
+        width: 100%;
+    }
+
+    .faq .faq-main {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .faq .contact-links a {
+        font-size: 22px;
+    }
+
+    .faq .contact-block-inner {
+        padding: 20px 15px;
+    }
+
+    .faq .contact-mess {
+        max-width: 100%;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .faq .faq-sidebar {
+        gap: 60px;
+    }
+
+    .faq .faq-single {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .faq .faq-single a {
+        font-size: 14px;
+    }
+
+    .faq .contact-block-inner h5 {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width:479px) {
+    .faq .contact-links a {
+        font-size: 14px;
+    }
+}

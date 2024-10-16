@@ -1,0 +1,22 @@
+.text-btn {
+    padding: 20px 0;
+    position: relative;
+}
+
+.text-btn .text-btn-wrapper {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.text-btn .btn-wrapper {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.text-btn .btn-wrapper .btn{
+    text-transform: uppercase;
+}

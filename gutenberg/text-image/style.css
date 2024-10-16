@@ -1,0 +1,125 @@
+.text-image {
+    padding: 45px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-image .text-image-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px 60px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.text-image *::marker {
+    color: #FFBC40;
+}
+
+.text-image .image-wrapper {
+    flex: 1 auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.text-image .image-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 53%;
+    top: 47%;
+    transform: translateY(-50%) translateX(-50%);
+    border: 1px dashed #E81F76;
+    border-radius: 50%;
+    width: 71%;
+    height: auto;
+    z-index: 0;
+    aspect-ratio: 1;
+}
+
+.text-image .image-wrapper .image-logo {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 3;
+    max-width: 193px;
+}
+
+.text-image+.text-image .image-wrapper .image-logo .fill-dot {
+    fill: #000;
+}
+
+.text-image+.text-image+.text-image .image-wrapper .image-logo .fill-dot {
+    fill: #fff;
+}
+
+.text-image+.text-image .image-wrapper .image-logo svg {
+    transform: rotateZ(30deg);
+}
+
+.text-image+.text-image+.text-image .image-wrapper .image-logo svg {
+    transform: none;
+}
+
+.text-image+.text-image .image-wrapper .image-logo {
+    top: 40%;
+    display: flex;
+}
+
+.text-image+.text-image+.text-image .image-wrapper .image-logo {
+    left: 75%;
+    top: 80%;
+    display: flex;
+}
+
+.text-image .image-wrapper img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.text-image .text-wrapper ul,
+.text-image .text-wrapper ol {
+    padding-left: 16px;
+}
+
+.text-image .text-wrapper h2 {
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 17px;
+}
+
+.text-image .text-wrapper h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 150px;
+    height: 3px;
+    background: #E81F76;
+}
+
+.text-image .text-wrapper {
+    width: 60%;
+    flex: 1 auto;
+    color: var(--black-75, #5C5559);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+@media (min-width:768px) {
+    .text-image.block-reverse .text-image-wrapper {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width:768px) {
+    .text-image .text-image-wrapper {
+        flex-wrap: wrap;
+    }
+}

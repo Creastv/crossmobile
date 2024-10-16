@@ -1,0 +1,69 @@
+#wpfooter {
+    position: relative;
+    z-index: -1;
+}
+
+.import-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#start-import-sections {
+    margin-top: 1rem;
+    background-color: #2271b1;
+    color: white;
+    padding: 2rem 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: 4px solid transparent;
+    transition: all 0.33s ease;
+    border-radius: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#start-import-sections:hover {
+    border-color: #2271b1;
+    background-color: white;
+    color: #2271b1;
+}
+
+/* .components-responsive-wrapper>span {
+    padding-bottom: 0 !important;
+} */
+
+.components-responsive-wrapper>.components-responsive-wrapper__content {
+    max-height: 300px;
+}
+
+html :where(.wp-block) {
+    max-width: 1376px;
+    margin: 0;
+}
+
+/* Poszerzenie sidebar w admin */
+@media (min-width: 782px) {
+
+    .interface-complementary-area__fill,
+    .block-editor-inserter__main-area,
+    .interface-complementary-area {
+        width: 100% !important;
+    }
+
+    .interface-interface-skeleton__sidebar {
+        position: relative !important;
+        width: 30%;
+    }
+
+    .interface-interface-skeleton__secondary-sidebar {
+        width: 15%;
+    }
+}
+
+/* Poszerzenie sidebar w admin */

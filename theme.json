@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "settings": {
+        "typography": {
+            "fontFamily": "'Open Sans', sans-serif"
+        },
+        "layout": {
+            "contentSize": "1376px",
+            "wideSize": "1376px"
+        }
+    }
+}
