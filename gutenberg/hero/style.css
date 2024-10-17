@@ -97,8 +97,10 @@
     }
 }
 
-@media (max-width:1440px) {
-   
+@media (max-width:991px) {
+    .hero .hero-wrapper h1 span{
+        font-size: 31px;
+    }
 }
 
 @media (max-width:768px) {
