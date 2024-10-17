@@ -40,30 +40,34 @@
 
 .downloads .download-single {
     border-radius: 10px;
-    border: 1px solid var(--black-75, #5C5559);
+    border: 1px solid var(--black-75, #c2c2c29b);
+    box-shadow: 0px 0px 0px 0px var(--black-75, #5C5559);
     background: #FFF;
-    box-shadow: 0px 4px 0px 0px var(--black-75, #5C5559);
-    padding: 22px 25px;
+    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    transition: all 0.3s linear;
+}
+.downloads .download-single:hover{
+    box-shadow: 0px 4px 0px 0px var(--black-75, #5C5559);
 }
 
 .downloads .download-single p {
     color: #000;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .downloads .download-single a {
     color: #E81F76;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 100px;
     border: 1px solid var(--Color, #E81F76);
-    padding: 15px 20px;
+    padding: 5px 20px;
     text-align: center;
     white-space: nowrap;
     transition: color .3s ease, background .3s ease;
@@ -146,10 +150,10 @@
 
 .downloads .downloads-categories h5 {
     color: #000;
-    font-size: 21px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 1.2;
-    text-decoration-line: underline;
+    /* text-decoration-line: underline; */
     transition: color .3s ease;
     cursor: pointer;
 }

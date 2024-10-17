@@ -1545,6 +1545,7 @@ footer .payments-icons {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s;
+    padding: 30px;
 }
 
 .popup-container {
