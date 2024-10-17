@@ -93,7 +93,8 @@ $(function () {
     });
 
     // Przewiń do góry, gdy klikniesz na strzałkę
-    $('#scrollUp').click(function () {
+    $('.scrollUp').click(function (e) {
+        e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, 600);
         return false;
     });

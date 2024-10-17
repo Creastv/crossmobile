@@ -86,6 +86,9 @@
     position: relative;
     z-index: 4;
 }
+.offer-boxes .offer-title span{
+    color:#0451BD;
+}
 
 .offer-boxes .offer-title * {
     color: #E72176;
@@ -96,6 +99,7 @@
     font-weight: 900;
     line-height: 0.54;
     letter-spacing: 3.08px;
+    padding: 10px 0;
 }
 
 .offer-boxes .tab-title-wrapper {

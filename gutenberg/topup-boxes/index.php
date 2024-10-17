@@ -57,12 +57,6 @@ require dirname(__FILE__, 2) . '/defaults.php';
                                                 <path opacity="0.2" d="M294.704 0C285.165 57.7546 223.229 97.8642 156.454 89.6192C118.757 84.959 85.7154 65.4021 67.0977 36.6841C59.7243 25.3324 54.8394 12.9052 52.6735 0H0C11.7513 81.8522 98.0658 140.005 192.768 129.848C271.34 121.444 333.276 67.9115 343 0H294.704Z"></path>
                                             </svg>
                                         </div>
-                                        <div class="offer-price">
-                                            <p class="price"><?php echo $single['price']; ?></p>
-                                            <span>
-                                                zł
-                                            </span>
-                                        </div>
                                         <?php if ((!empty($single['memory_number'])) && (!empty($single['memory_text']))) { ?>
                                             <div class="offer-gb">
                                                 <div class="single-gb">
@@ -73,6 +67,13 @@ require dirname(__FILE__, 2) . '/defaults.php';
                                                 </div>
                                             </div>
                                         <?php }; ?>
+                                        <div class="offer-price">
+                                            <p class="price"><?php echo $single['price']; ?></p>
+                                            <span>
+                                                zł
+                                            </span>
+                                        </div>
+
                                         <?php if (!empty($single['features'])) { ?>
                                             <div class="offer-features">
                                                 <?php foreach ($single['features'] as $feature) { ?>

@@ -64,9 +64,18 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                                                 </svg>
                                             </div>
                                             <div class="offer-title">
-                                                <h3>
-                                                    <?php echo get_the_title($single->ID); ?>
-                                                </h3>
+                                                <?php if (get_field('title-offer', $single->ID)) :
+                                                    $one = get_field('title-offer', $single->ID)['title_one'];
+                                                    $two = get_field('title-offer', $single->ID)['title_two'];
+                                                ?>
+                                                    <h3>
+                                                        <?php echo $one; ?><span><?php echo $two; ?></span>
+                                                    </h3>
+                                                <?php else : ?>
+                                                    <h3>
+                                                        <?php echo get_the_title($single->ID); ?>
+                                                    </h3>
+                                                <?php endif; ?>
                                             </div>
                                             <div class="offer-price">
                                                 <p class="price"><?php echo get_field('price', $single->ID); ?></p>
