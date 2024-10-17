@@ -79,5 +79,8 @@
 @media (max-width:768px) {
     .features .single-offer {
         width: 100%;
+        padding: 10px 15px;
+        border-left: none;
+        border-bottom: 1px solid #C2C2C2;
     }
 }

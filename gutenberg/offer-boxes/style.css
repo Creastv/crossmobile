@@ -305,7 +305,9 @@
         text-align: center;
     }
 }
-
+.swiper-pagination{
+    bottom: 0px!important;
+}
 .swiper-button-prev::after,
 .swiper-rtl .swiper-button-next::after,
 .swiper-button-next::after,
@@ -385,5 +387,8 @@
 @media (max-width:479px) {
     .offer-boxes .offer-boxes-wrapper {
         padding: 0 0;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none!important;
     }
 }

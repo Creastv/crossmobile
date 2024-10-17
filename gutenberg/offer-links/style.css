@@ -75,5 +75,11 @@
 @media (max-width:768px) {
     .offer-links .single-offer {
         width: 100%;
+        padding: 10px 20px;
+        border-left: none;
+        border-bottom: 1px solid #000;
+    }
+    .offer-links .single-offer h4 {
+        font-size: 16px;
     }
 }

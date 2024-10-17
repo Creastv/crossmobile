@@ -7,7 +7,7 @@
     position: absolute;
     left: 53%;
     top: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-128%);
     z-index: 4;
     pointer-events: none;
 }
@@ -46,11 +46,12 @@
     background: #FFBC40;
     width: 55%;
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 .cta-form-horizontal .cta-form {
     padding: 10px 30px 10px 10px;
+    align-self: center;
 }
 
 .cta-form-horizontal .cta-form h3 {
@@ -64,7 +65,9 @@
 
 .cta-form-horizontal .cta-form-wrapper>img {
     position: relative;
-    transform: translateX(-50%);
+    z-index: 5;
+    width: 33%;
+    /* transform: translateX(-50%); */
 }
 
 .cta-form-horizontal input.wpcf7-text {
@@ -92,7 +95,7 @@
 }
 
 .cta-form-horizontal .wpcf7-form-control.wpcf7-submit {
-    width: 35%;
+    width: calc(35% + 45px);
     border-radius: 106.878px;
     border: 1.069px solid var(--black, #291B22);
     background: var(--Color, #E81F76);
@@ -113,7 +116,7 @@
 
 @media (max-width:1440px) {
     .cta-form-horizontal .cta-form-wrapper>img {
-        transform: translateX(-11%);
+        /* transform: translateX(-11%); */
     }
 
 
@@ -121,10 +124,10 @@
         width: 65%;
     }
 
-    .cta-form-horizontal .wpcf7-form-control.wpcf7-submit,
+    /* .cta-form-horizontal .wpcf7-form-control.wpcf7-submit,
     .cta-form-horizontal .cta-form-menu-wrapper {
         width: 45%;
-    }
+    } */
 
 }
 
@@ -138,7 +141,7 @@
     }
 
     .cta-form-horizontal .custom-icon {
-        left: 39%;
+        /* left: 39%; */
     }
 }
 
@@ -157,10 +160,10 @@
     }
 
     .cta-form-horizontal .cta-form-wrapper {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+        /* flex-wrap: wrap;*/
+        /* flex-direction: column-reverse;  */
         position: relative;
-        padding: 20px 0;
+        padding: 20px 20px;
     }
 
     .cta-form-horizontal .custom-icon {
@@ -190,18 +193,30 @@
         position: relative;
         right: auto;
         bottom: -20px;
-        margin-left: auto;
     }
 
     .cta-form-horizontal .custom-icon {
-        left: 35%;
-        top: 75%;
+        left: 0;
+        top: 50%;
+        transform: translate(10px, 10px);
     }
 }
 
 @media (max-width:768px) {
     .cta-form-horizontal .cta-form {
         padding: 10px;
+    }
+    .cta-form-horizontal .cta-form-horizontal-wrapper {
+        padding: 15px;
+    }
+    .cta-form-horizontal  .cta-form-menu-wrapper{
+        padding: 15px;
+    }
+    .cta-form-horizontal .cta-form-wrapper>img {
+        display: none;
+    }
+    .cta-form-horizontal .custom-icon{
+        display: none;
     }
 }
 
@@ -214,4 +229,5 @@
         width: 100%;
         margin-left: 0;
     }
+
 }

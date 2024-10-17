@@ -121,6 +121,7 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                                     </div>
                                 <?php }; ?>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                         <div class="swiper-button-prev OfferSwiperLeft">
                             <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +133,10 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                                 <path d="M22.4424 4.33441C22.6271 3.81392 22.3549 3.24226 21.8344 3.05757L13.3526 0.0478837C12.8321 -0.136806 12.2604 0.135413 12.0757 0.655901C11.891 1.17639 12.1633 1.74805 12.6837 1.93274L20.2232 4.60802L17.5479 12.1474C17.3632 12.6679 17.6354 13.2396 18.1559 13.4243C18.6764 13.609 19.2481 13.3367 19.4327 12.8163L22.4424 4.33441ZM0.929934 14.9029L21.9299 4.90286L21.0701 3.09714L0.0700664 13.0971L0.929934 14.9029Z" fill="#5C5559"></path>
                             </svg>
                         </div>
+
+
                     <?php }; ?>
+
                 </div>
             <?php }; ?>
         </div>
@@ -147,26 +151,50 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                 loop: true,
                 slidesPerView: 1,
                 spaceBetween: 30,
+                pagination: {
+                    el: "#<?php echo $mySectionID; ?> .swiper-pagination",
+                    clickable: true,
+                },
 
                 breakpoints: {
+                    479: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        pagination: true
+
+                    },
+
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 30
+                        spaceBetween: 30,
+                        navigation: {
+                            nextEl: '#<?php echo $mySectionID; ?> .swiper-button-next.OfferSwiperRight',
+                            prevEl: '#<?php echo $mySectionID; ?> .swiper-button-prev.OfferSwiperLeft',
+                        },
+                        pagination: false
                     },
                     1199: {
                         slidesPerView: 3,
-                        spaceBetween: 30
+                        spaceBetween: 30,
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '#<?php echo $mySectionID; ?> .swiper-button-next.OfferSwiperRight',
+                            prevEl: '#<?php echo $mySectionID; ?> .swiper-button-prev.OfferSwiperLeft',
+                        },
+                        pagination: false
                     },
                     1440: {
                         slidesPerView: 4,
-                        spaceBetween: 30
+                        spaceBetween: 30,
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '#<?php echo $mySectionID; ?> .swiper-button-next.OfferSwiperRight',
+                            prevEl: '#<?php echo $mySectionID; ?> .swiper-button-prev.OfferSwiperLeft',
+                        },
+                        pagination: false
                     }
                 },
-                // Navigation arrows
-                navigation: {
-                    nextEl: '#<?php echo $mySectionID; ?> .swiper-button-next.OfferSwiperRight',
-                    prevEl: '#<?php echo $mySectionID; ?> .swiper-button-prev.OfferSwiperLeft',
-                },
+
             });
         </script>
     <?php }; ?>

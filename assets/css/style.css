@@ -1633,6 +1633,14 @@ footer .payments-icons {
 }
 
 @media (max-width:991px) {
+    .popup-btn {
+        right: 15px;
+        top:initial;
+        bottom: 100px;
+    }
+    #scrollUp {
+        right: 15px;
+    }
     .popup-bg {
         display: none;
     }
@@ -1670,6 +1678,7 @@ footer .payments-icons {
     .popup-icon {
         opacity: 0.5;
     }
+    
 }
 
 /* popup */
