@@ -16,7 +16,7 @@
 .offer-boxes .offer-single {
     border-radius: 10px;
     background: #FFF;
-    padding: 20px 30px;
+    padding: 20px 15px;
     transition: transform .3s ease, box-shadow .3s ease;
     display: flex;
     flex-direction: column;
