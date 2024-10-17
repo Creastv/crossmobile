@@ -24,8 +24,8 @@
     animation-play-state: running;
     -webkit-animation-play-state: running;
     animation-play-state: running;
-    z-index: 0;
-    transform: rotateZ(180deg);
+    z-index: 37;
+    transform: rotateZ(180deg) translate(0, 1px);
 }
 
 .hero .custom-icon {
