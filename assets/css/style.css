@@ -181,7 +181,7 @@ main .container-lg,
 
 main .container-md,
 .container-md {
-    max-width: 1300px;
+    max-width: 1400px;
 }
 
 main .container-sm,
@@ -190,6 +190,10 @@ main .container-sm,
 }
 
 @media (max-width:1440px) {
+    main .container-md,
+.container-md {
+    max-width: 1000px!important;
+}
     main .container {
         padding: 0 80px;
     }
