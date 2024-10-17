@@ -1,5 +1,5 @@
 .hero {
-    padding: 100px 0 220px;
+    padding: 120px 0 220px;
     position: relative;
     background-color: #0451BD
 }
@@ -33,7 +33,7 @@
     max-width: 280px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 9;
+    /* z-index: 9; */
     pointer-events: none;
 }
 
@@ -53,6 +53,10 @@
     text-align: center;
     color: #fff;
     margin-bottom: 10px;
+}
+.hero .hero-wrapper h1 span{
+    font-weight: 400;
+    font-size: 38px;
 }
 
 .hero .hero-wrapper h1 em {
@@ -94,14 +98,15 @@
 }
 
 @media (max-width:1440px) {
-    .hero {
-        padding: 60px 0 220px;
-    }
+   
 }
 
 @media (max-width:768px) {
+     .hero {
+        padding: 100px 0 220px;
+    }
     .hero .custom-icon {
-        opacity: 0.6;
+        opacity: 0.1;
         z-index: 0;
     }
 }

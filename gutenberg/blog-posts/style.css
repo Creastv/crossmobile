@@ -18,7 +18,7 @@
 }
 
 .blog-posts .post-thumb {
-    aspect-ratio: 454 / 300;
+    /* aspect-ratio: 454 / 300; */
     width: 100%;
     height: auto;
     border-radius: 10px;
