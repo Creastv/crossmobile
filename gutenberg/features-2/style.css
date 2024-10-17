@@ -11,10 +11,10 @@
 
 .features-2 .single-offer {
     width: calc(33% - 15px);
-    padding: 20px 30px;
+    padding: 15px 15px;
     transition: background .3s ease, border .3s ease, color .3s ease, box-shadow .3s ease;
     border-radius: 15px;
-    border: 1.5px solid var(--black-50, #C2C2C2);
+    border: 1.5px solid #c2c2c29b;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -23,7 +23,7 @@
 }
 
 .features-2 .single-offer p {
-    font-size: 21px;
+    font-size: 16px;
     color: #291B22;
     line-height: 1.2;
 }
@@ -35,14 +35,14 @@
 
 .features-2 .single-offer strong,
 .features-2 .single-offer em strong {
-    font-weight: 31px;
+    font-weight: 21px;
     font-weight: 800;
 }
 
 .features-2 .single-offer img,
 .features-2 .single-offer svg {
-    min-width: 50px;
-    max-width: 50px;
+    min-width: 30px;
+    max-width: 30px;
 }
 
 .features-2 .single-offer:hover {
@@ -57,8 +57,12 @@
 }
 
 @media (max-width:768px) {
+    .features-2 .features-wrapper{
+        gap:10px;
+    }
     .features-2 .single-offer {
         width: 100%;
+        padding: 5px 20px;
     }
 
     .features-2 .single-offer p {
