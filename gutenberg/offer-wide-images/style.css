@@ -22,7 +22,7 @@
     border: 5px solid #FFF;
     position: relative;
     overflow: hidden;
-    padding: 10px 20px 20px;
+    padding: 20px 20px 20px;
 }
 
 .offer-wide-images .single-offer .offer-left,
@@ -52,7 +52,7 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    padding: 5px 20px;
+    padding: 10px 20px;
     width: 100%;
     text-align: center;
     border-radius: 100px;
@@ -121,7 +121,7 @@
 }
 
 .offer-wide-images .single-offer .single-gb {
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 
 .offer-wide-images .single-offer.theme-1 .icon-single img {
@@ -521,8 +521,9 @@
 }
 
 .single-offer.theme-5 .offer-custom-price span {
-    font-size: 120px;
-    line-height: 1.2;
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 1;
 }
 
 .single-offer.theme-5 .offer-custom-price,
@@ -534,7 +535,7 @@
 .single-offer.theme-5 .offer-description {
     color: #FFF;
     text-align: right;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
 }
 
 .single-offer.theme-5 .offer-description p {
