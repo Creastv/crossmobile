@@ -109,7 +109,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
 
 <?php if (!empty(get_field('top-up'))) { ?>
     <section class="text-btn">
-        <div class="container container-sm">
+        <div class="container ">
             <?php foreach (get_field('top-up') as $key => $tab) { ?>
                 <div class="text-btn-wrapper <?php if ($key == 0) echo 'active'; ?>" data-tab="top-up_<?php echo $key; ?>">
                     <?php echo $tab['description']; ?>
