@@ -27,15 +27,17 @@
         <div class="nav-wrapper">
             <div class="container">
                 <div class="nav-wrapper-inner">
-                    <a href="<?php echo get_home_url(); ?>" class="main-logo" title="crossmobile logo">
-                        <?php if (!empty(get_theme_mod('custom_logo'))) { ?>
-                            <?php echo wp_get_attachment_image(get_theme_mod('custom_logo'), 'full', 0, ['class' => '']); ?>
-                        <?php }; ?>
-                    </a>
-                    <div class="desktop-hamburger" onclick="toggleDesktopMenu()">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                    <div class="brand">
+                        <a href="<?php echo get_home_url(); ?>" class="main-logo" title="crossmobile logo">
+                            <?php if (!empty(get_theme_mod('custom_logo'))) { ?>
+                                <?php echo wp_get_attachment_image(get_theme_mod('custom_logo'), 'full', 0, ['class' => '']); ?>
+                            <?php }; ?>
+                        </a>
+                        <div class="desktop-hamburger" onclick="toggleDesktopMenu()">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
                     </div>
                     <div class="hamburger" onclick="toggleMenu()">
                         <div class="bar"></div>

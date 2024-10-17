@@ -247,6 +247,8 @@
     gap: 5px;
     text-align: center;
     justify-content: center;
+    /* min-width: 50%;
+    margin:0 auto; */
 }
 
 .offer-boxes .single-gb {
