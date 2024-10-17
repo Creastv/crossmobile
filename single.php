@@ -66,7 +66,7 @@ $posts = get_posts(
                         <?php echo wp_get_attachment_image(get_post_thumbnail_id($post->ID), 'medium_large', 0, ['class' => '']); ?>
                     </div>
                     <div class="post-data">
-                        <h4><?php echo get_the_title($post->ID); ?></h4>
+                        <h2><?php echo get_the_title($post->ID); ?></h2>
                         <div class="post-description">
                             <?php echo get_the_excerpt(); ?>
                         </div>
@@ -78,7 +78,7 @@ $posts = get_posts(
     </div>
 </section>
 
-<?php setup_postdata( 234 ); ?>
+<?php setup_postdata(234); ?>
 <?php the_content(); ?>
 
 <?php get_footer(); ?>
