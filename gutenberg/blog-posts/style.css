@@ -28,6 +28,7 @@
 
 .blog-posts .post-thumb img {
     width: 100%;
+    min-width: 100%;
     object-fit: cover;
     transition: transform .3s ease;
 }
