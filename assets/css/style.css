@@ -974,7 +974,18 @@ footer .payments-icons {
     margin: 40px auto;
     color: #000;
 }
+.single-post-content p{
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.single-post-content li{
+    margin-bottom: 15px;
+}
+.single-post-content .wp-block-heading{
+    margin-bottom: 30px;
 
+}
 /* single post */
 
 /* cf7 */
@@ -1472,6 +1483,9 @@ footer .payments-icons {
 }
 
 @media (max-width:768px) {
+    .current-post-thumb img {
+        padding: 0;
+    }
     .included-description-wrapper {
         flex-direction: column;
     }
@@ -1479,6 +1493,15 @@ footer .payments-icons {
     .included-featured {
         margin-bottom: 24px;
     }
+}
+@media (max-width:491px) {
+.single-post .hero{
+    padding: 100px 0 50px;
+
+}
+.hero+section{
+    margin-top: -100px!important;
+}
 }
 
 /* single offer */

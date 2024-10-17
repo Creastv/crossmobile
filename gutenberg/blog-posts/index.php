@@ -28,9 +28,9 @@ $posts = get_posts(
                         <?php echo wp_get_attachment_image(get_post_thumbnail_id($post->ID), 'medium_large', 0, ['class' => '']); ?>
                     </div>
                     <div class="post-data">
-                        <h4><?php echo get_the_title($post->ID); ?></h4>
+                        <h2><?php echo get_the_title($post->ID); ?></h2>
                         <div class="post-description">
-                            <?php echo get_the_excerpt(); ?>
+                            <?php echo get_the_excerpt($post->ID); ?>
                         </div>
                         <p class="btn-details">Szczegóły oferty</p>
                     </div>
