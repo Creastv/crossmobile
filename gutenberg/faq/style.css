@@ -261,4 +261,10 @@
     .faq .contact-links a {
         font-size: 14px;
     }
+    .faq .contact-links a {
+        font-size: 14px;
+    }
+    .faq .container{
+        padding: 0;
+    }
 }

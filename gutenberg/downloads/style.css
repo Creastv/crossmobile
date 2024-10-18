@@ -219,4 +219,10 @@
     .downloads .contact-links a {
         font-size: 14px;
     }
+    .downloads .container{
+        padding: 0;
+    }
+    .downloads .downloads-wrapper{
+        padding: 20px 15px;
+    }
 }
