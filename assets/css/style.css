@@ -1455,12 +1455,21 @@ footer .payments-icons {
 }
 
 @media (max-width:1199px) {
+    .offer-included-wrapper {
+        /* max-width: 100%; */
+        /* order: 1; */
+        width: 50%;
+        padding-right: 40px;
+    }
+    .single-offer .hero-offer{
+        width: 50%;
+        margin-top: -100px;
+    }
     .offer-included .container{
         padding:0 50px;
 
     }
     .single-offer .hero-offer {
-        margin-top: 0;
         position: relative;
         top: auto;
     }
@@ -1485,6 +1494,19 @@ footer .payments-icons {
     .single-offer .hero {
         padding-bottom: 40px;
     }
+    .single-offer .hero-offer{
+        width: 50%;
+    }
+    .included-description-wrapper {
+        flex-direction: column;
+        gap:10px
+    }
+    .included-description-wrapper{
+        /* gap:20px */
+    }
+    .included-description{
+        gap:10px
+    }
 }
 
 @media (max-width:1024px) {
@@ -1492,25 +1514,40 @@ footer .payments-icons {
         font-size: 51px!important;
         line-height: 1!important;
     }
+    .single-offer .hero-offer{
+        width: 50%;
+        margin-top: -100px;
+    }
 
     .offer-included-wrap-outer {
         /* flex-wrap: wrap; */
     }
 
-    .single-offer .hero-offer {
+    /* .single-offer .hero-offer {
         margin: 0 auto;
         order: 0;
-    }
+    } */
 
     .offer-included-wrapper {
         /* max-width: 100%; */
         /* order: 1; */
-        width: 60%;
+        width: 50%;
         padding-right: 40px;
     }
     .single-offer .hero-offer{
-        width: 40%;
+        width: 50%;
     }
+    .included-description-wrapper {
+        flex-direction: column;
+        gap:10px
+    }
+    .included-description-wrapper{
+        /* gap:20px */
+    }
+    .included-description{
+        gap:10px
+    }
+
 
 }
 
@@ -1519,6 +1556,7 @@ footer .payments-icons {
         padding:0 15px;
 
     }
+  
     .single-offer .offer-included-wrap-outer{
         flex-wrap: wrap;
         margin-top: -70px;
@@ -1588,13 +1626,24 @@ footer .payments-icons {
 }
 .single-offer .hero-offer .g-icon{
     max-width: 50px;
+    right: -10px;
+}
+.single-offer .hero-offer .g-icon svg{
+    width: 100%;
+    height: auto;
 }
 .single-offer .hero-offer h2{
-    font-size: 28px;
+    font-size: 21px;
 }
 .single-offer .hero-thumb {
     margin-left: 0;
     width: 100%;
+}
+.single-offer .hero-offer{
+    padding: 15px;
+}
+.single-offer .single-feature{
+    font-size: 14px;
 }
 }
 
