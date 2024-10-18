@@ -123,3 +123,10 @@
         flex-wrap: wrap;
     }
 }
+
+@media (max-width:479px) {
+ 
+    .text-image .container{
+        padding: 0;
+    }
+}
