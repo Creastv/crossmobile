@@ -1084,7 +1084,7 @@ footer .payments-icons {
 .offer-included-items {
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 30px;
 }
 
 .offer-included-wrapper>h2 {
@@ -1113,6 +1113,7 @@ footer .payments-icons {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    gap: 50px;
 }
 .included-description-wrapper > div {
     flex: auto;
@@ -1127,6 +1128,7 @@ footer .payments-icons {
 
 .included-description h5 {
     /* margin-bottom: 15px; */
+    margin-bottom: 10px;
     color: #291B22;
 }
 
