@@ -18,9 +18,9 @@
     </div>
     <div class="container">
         <div class="hero-wrapper">
-            <h1>
-                <?php echo get_field('title'); ?>
-            </h1>
+
+            <?php echo get_field('title'); ?>
+
             <div class="hero-thumb">
                 <?php echo wp_get_attachment_image(get_post_thumbnail_id(get_the_id()), 'large', 0, ['class' => '']); ?>
             </div>
