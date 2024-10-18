@@ -1113,6 +1113,9 @@ footer .payments-icons {
     align-items: flex-start;
     width: 100%;
 }
+.included-description-wrapper > div {
+    flex: auto;
+}
 
 .included-description p {
     color: var(--black-75, #5C5559);
@@ -1612,7 +1615,7 @@ footer .payments-icons {
 
 
 .single-post  .hero+section{
-    margin-top: -100px!important;
+    margin-top: -50px!important;
 }
 
 .single-offer .offer-price .price{
