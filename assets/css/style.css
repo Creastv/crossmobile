@@ -1105,6 +1105,7 @@ footer .payments-icons {
     flex: 1 auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px
 }
 
 .included-description-wrapper {
@@ -1135,6 +1136,7 @@ footer .payments-icons {
     font-size: 24px;
     font-weight: 900;
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .single-offer .btn-section {
