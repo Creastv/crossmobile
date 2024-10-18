@@ -2,7 +2,9 @@
     padding: 40px 0 40px;
     position: relative;
 }
-
+iframe{
+    border:0px;
+}
 .rich-text .rich-text-wrapper {
     padding: 25px;
     border-radius: 10px;
@@ -42,7 +44,16 @@
 }
 
 @media (max-width:479px) {
-
+    .rich-text{
+        
+    }
+    .rich-text .container{
+        padding: 0;
+    }
+    .rich-text .rich-text-wrapper {
+        padding: 15px;
+        
+    }
     .rich-text table tr th,
     .rich-text table tr td {
         font-size: 14px;
