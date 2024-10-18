@@ -1590,6 +1590,10 @@ footer .payments-icons {
 .single-offer .hero-offer h2{
     font-size: 28px;
 }
+.single-offer .hero-thumb {
+    margin-left: 0;
+    width: 100%;
+}
 }
 
 /* single offer */
