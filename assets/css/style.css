@@ -1517,7 +1517,7 @@ footer .payments-icons {
     }
     .included-description-wrapper {
         flex-direction: column;
-        gap:10px
+        gap:20px
     }
     .included-description-wrapper{
         /* gap:20px */
