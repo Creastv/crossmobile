@@ -112,6 +112,9 @@
     line-height: 1.5;
 }
 
+.text-image .text-wrapper li {
+margin-bottom: 15px;
+}
 @media (min-width:768px) {
     .text-image.block-reverse .text-image-wrapper {
         flex-direction: row-reverse;
