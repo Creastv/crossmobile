@@ -1078,7 +1078,7 @@ footer .payments-icons {
 
 .offer-included-wrapper {
     margin-top: 50px;
-    max-width: 50%;
+    width: 60%;
 }
 
 .offer-included-items {
@@ -1163,6 +1163,10 @@ footer .payments-icons {
     margin-left: 7%;
     display: flex;
     align-items: flex-end;
+    width: 50%;
+}
+.single-offer .hero-thumb img{
+    min-width: 300px;
 }
 
 .single-offer .hero-thumb::before {
@@ -1183,14 +1187,17 @@ footer .payments-icons {
 
 .single-offer .hero-wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    max-width: 60%;
+    max-width: 63%;
+}
+.single-offer .hero-wrapper .hero-title{
+    max-width: 70%;
 }
 
 .single-offer .hero .hero-wrapper h1 {
     text-align: left;
     margin-bottom: 0;
-    max-width: 55%;
 }
 
 .single-offer .hero .custom-icon {
@@ -1211,11 +1218,12 @@ footer .payments-icons {
     flex-direction: column;
     padding: 10px 30px 30px;
     z-index: 99;
-    margin-top: -250px;
+    margin-top: -350px;
     position: sticky;
     top: 130px;
-    max-width: 581px;
-    width: 100%;
+    /* max-width: 581px; */
+   width: 35%;
+    /* width: 100%; */
     margin-left: auto;
 }
 
@@ -1435,25 +1443,33 @@ footer .payments-icons {
 }
 
 @media (max-width:1440px) {
-    .single-offer .hero .hero-wrapper h1 {
+    /* .single-offer .hero .hero-wrapper h1 {
         font-size: 30px;
         max-width: 60%;
-    }
+    } */
 
-    .single-offer .hero-offer {
+    /* .single-offer .hero-offer {
         max-width: 500px;
-    }
+    } */
 }
 
 @media (max-width:1199px) {
+    .offer-included .container{
+        padding:0 50px;
+
+    }
     .single-offer .hero-offer {
         margin-top: 0;
         position: relative;
         top: auto;
     }
 
-    .single-offer .hero-thumb {
+    /* .single-offer .hero-thumb {
         display: none;
+    } */
+    .single-offer .hero {
+        padding: 50px 0 220px;
+
     }
 
     .single-offer .hero-wrapper,
@@ -1471,9 +1487,12 @@ footer .payments-icons {
 }
 
 @media (max-width:1024px) {
+    .hero .hero-wrapper h1{
+        font-size: 51px!important;
+    }
 
     .offer-included-wrap-outer {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     .single-offer .hero-offer {
@@ -1482,15 +1501,59 @@ footer .payments-icons {
     }
 
     .offer-included-wrapper {
-        max-width: 100%;
-        order: 1;
+        /* max-width: 100%; */
+        /* order: 1; */
+        width: 60%;
+        padding-right: 40px;
+    }
+    .single-offer .hero-offer{
+        width: 40%;
     }
 
 }
 
 @media (max-width:768px) {
+    .offer-included .container{
+        padding:0 15px;
+
+    }
+   .single-offer .offer-included-wrap-outer{
+        flex-wrap: wrap;
+
+    }
+    .single-offer .hero-offer{
+        width: 100%;
+        order: 1;
+    }
+    .offer-included-wrapper{
+        width: 100%;
+        padding-right: 0;
+        order:2
+    }
+    .single-offer .hero {
+        padding: 100px 0 40px;
+    }
+    .single-offer .hero-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 100%;
+        width: 100%;
+    }
+    .single-offer .hero-wrapper .hero-title{
+        width: 100%;
+        max-width: 100%;
+    }
+    .single-offer .hero-thumb{
+        margin-left: 0;
+        width: 70%;
+    }
+    .single-offer .hero-thumb img{
+        width: 100%;
+        min-width: 100%;
+    }
     .current-post-thumb img {
         padding: 5px;
+
     }
     .included-description-wrapper {
         flex-direction: column;
@@ -1499,6 +1562,7 @@ footer .payments-icons {
     .included-featured {
         margin-bottom: 24px;
     }
+   
 }
 @media (max-width:491px) {
 .single-post .hero{
@@ -1507,6 +1571,22 @@ footer .payments-icons {
 }
 .single-post  .hero+section{
     margin-top: -100px!important;
+}
+
+.single-offer .offer-price .price{
+    font-size: 130px;
+}
+.single-offer .offer-price div  span{
+    font-size: 100px;
+}
+.single-offer .offer-price div  span.price-currency{
+    font-size: 16px;
+}
+.single-offer .hero-offer .g-icon{
+    max-width: 50px;
+}
+.single-offer .hero-offer h2{
+    font-size: 28px;
 }
 }
 
