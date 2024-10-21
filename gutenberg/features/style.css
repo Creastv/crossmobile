@@ -61,14 +61,28 @@
     font-size: 25px;
 }
 
-@media (max-width:1365px) {
+@media (max-width:1400px) {
     .features .features-wrapper {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        gap:10px;
     }
 
     .features .single-offer {
-        width: calc(33.33333333% - 15px);
+        width: calc(33.33333333% - 10px);
+        gap:10px;
+        padding: 15px;
     }
+    .features .single-offer p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1119px) {
+    .features .features-wrapper {
+        flex-wrap: wrap;
+        gap:10px;
+    }
+
 }
 
 @media (max-width:991px) {

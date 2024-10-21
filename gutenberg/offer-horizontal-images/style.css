@@ -310,6 +310,9 @@
 }
 
 @media (max-width:1440px) {
+    .offer-horizontal-images .offer-horizontal-images-wrapper{
+        gap:15px 10px;
+    }
     .offer-horizontal-images .offer-promo .offer-number {
         font-size: 120px;
     }
@@ -325,7 +328,7 @@
 
 @media (max-width:1366px) {
     .offer-horizontal-images .offer-horizontal-images-wrapper {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: center;
     }
 
@@ -338,6 +341,9 @@
 
     .offer-horizontal-images .single-offer {
         width: calc(50% - 15px);
+    }
+    .offer-horizontal-images .offer-horizontal-images-wrapper {
+        flex-wrap: wrap;
     }
 }
 
