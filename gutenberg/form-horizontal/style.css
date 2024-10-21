@@ -43,16 +43,30 @@
 }
 
 .cta-form-horizontal .cta-form-wrapper {
+    position: relative;
     border-radius: 20px;
-    background: #FFBC40;
+    /* background: #FFBC40; */
     width: 55%;
     display: flex;
     align-items: end;
+}
+.cta-form-horizontal .cta-form-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FFBC40;
+    width: calc(100% - 107px);
+    height: 100%;
+    border-radius: 20px;
+    z-index: 0;
 }
 
 .cta-form-horizontal .cta-form {
     padding: 10px 30px 10px 10px;
     align-self: center;
+    position: relative;
+    z-index: 2;
 }
 
 .cta-form-horizontal .cta-form h3 {
@@ -122,13 +136,8 @@
 
 
     .cta-form-horizontal .cta-form-wrapper {
-        width: 65%;
+        width: 85%;
     }
-
-    /* .cta-form-horizontal .wpcf7-form-control.wpcf7-submit,
-    .cta-form-horizontal .cta-form-menu-wrapper {
-        width: 45%;
-    } */
 
 }
 
@@ -140,26 +149,19 @@
     .cta-form-horizontal .cta-form-wrapper>img {
         transform: none;
     }
-
-    .cta-form-horizontal .custom-icon {
-        /* left: 39%; */
-    }
-}
-
-@media (max-width:1199px) {
     .cta-form-horizontal .cta-form-horizontal-wrapper {
         flex-wrap: wrap;
     }
+    .cta-form-horizontal .cta-form-wrapper::after{
+        /* width: 100%; */
+        right: initial;
+        left: 0;
 
+    }
     .cta-form-horizontal .cta-form-wrapper,
     .cta-form-horizontal .cta-form-menu-wrapper {
         width: 100%;
     }
-
-    .cta-form-horizontal .custom-icon {
-        opacity: 0.5;
-    }
-
     .cta-form-horizontal .cta-form-wrapper {
         /* flex-wrap: wrap;*/
         /* flex-direction: column-reverse;  */
@@ -177,7 +179,16 @@
         right: 0;
         bottom: 0;
         z-index: 9;
+        max-width: 300px;
     }
+    
+   
+
+    .cta-form-horizontal .custom-icon {
+        opacity: 0.5;
+    }
+
+
 
     .cta-form-horizontal .cta-form {
         margin-right: auto;
@@ -185,7 +196,15 @@
     }
 }
 
+
+
 @media (max-width:991px) {
+    .cta-form-horizontal .cta-form-wrapper::after{
+        width: 100%;
+        right: initial;
+        left: 0;
+
+    }
     .cta-form-horizontal .cta-form {
         max-width: 100%;
     }
