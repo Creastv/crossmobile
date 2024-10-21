@@ -13,6 +13,11 @@
     padding: 30px 30px;
 }
 
+.OfferSwiper .swiper-wrapper{
+    /* justify-content: center!important;
+    width: 100%!important; */
+}
+
 .offer-boxes .offer-single {
     border-radius: 10px;
     background: #FFF;
@@ -64,7 +69,11 @@
     fill: #F2F2F2;
     opacity: 1;
 }
-
+@media (min-width: 1199px) {
+    .offer-boxes .swiper-wrapper {
+        justify-content: center;
+    }
+}
 
 @media (min-width:1440px) {
 
