@@ -33,10 +33,15 @@ $(document).on('click', '[data-scroll]', function () {
 });
 $('.download-category[data-category="cat_0"]').toggleClass('active')
 $(document).on('click', '[data-category] .faq-cat-title', function () {
+
     let scrollToCategory = $(this).parent().data('category');
+
     let targetElement = $('[data-category="' + scrollToCategory + '"]');
+
     $('.download-category').removeClass('active');
+
     targetElement.toggleClass('active');
+    
     let navHeight = $('.nav-wrapper').length ? $('.nav-wrapper').outerHeight() : 0;
     if (targetElement.length) {
         $('html, body').animate({

@@ -18,24 +18,72 @@
     position: sticky;
     top: 100px;
 }
-
+.faq .faq-sidebar h4 {
+    font-size: 28px;
+}
 .downloads .downloads-main {
     width: 65%;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 20px;
 }
 
-.downloads h3 {
+/* .downloads h3 {
     font-weight: 900;
     font-size: 31px;
     margin-bottom: 29px;
+} */
+.downloads .download-category .download-cat-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    padding: 15px;
+    border-bottom: 1px solid var(--black-75, #c2c2c29b);
+    box-shadow: 0px 0px 0px 0px var(--black-75, #5C5559);
+    border-radius: 10px;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+}
+.downloads .download-category .download-cat-title h3{
+    margin: 0;
+    font-size: 21px;
+
+}
+.downloads .download-category .download-cat-title span{
+    position: relative;
+    width: 40px;
+}
+.downloads .download-category .download-cat-title span svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+.downloads .download-category .download-cat-title span svg path{
+    fill:black
 }
 
+.downloads .download-category.active .download-cat-title{
+    box-shadow: 0px 4px 0px 0px var(--black-75, #5C5559);
+}
+
+.downloads .download-category.active .download-cat-title .fa-vertical{
+    opacity: 0;
+}
 .downloads .file-wrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
+    margin: 20px 0;
+}
+.downloads .download-category .file-wrapper{
+    display: none;
+}
+.downloads .download-category.active .file-wrapper{
+    display: flex;
 }
 
 .downloads .download-single {
@@ -161,7 +209,12 @@
 .downloads .downloads-categories h5:hover {
     color: #E81F76;
 }
-
+@media (max-width:1400px) {
+    .downloads .contact-links a{
+       font-size: 21px;
+    }
+    
+   }
 @media (max-width:1199px) {
     .downloads .downloads-wrapper {
         flex-wrap: wrap;
@@ -222,7 +275,19 @@
     .downloads .container{
         padding: 0;
     }
+    .downloads .contact-mess{
+        font-size: 14px;
+    }
     .downloads .downloads-wrapper{
         padding: 20px 15px;
+    }
+    .downloads .downloads-sidebar h4 {
+        font-size: 21px;
+    }
+    .downloads h3{
+        font-size: 21px;
+    }
+    .downloads .download-single p{
+        font-size: 16px;
     }
 }
