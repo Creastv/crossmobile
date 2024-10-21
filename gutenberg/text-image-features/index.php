@@ -22,9 +22,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
                                 <div class="feature-icon">
                                     <?php echo wp_get_attachment_image($single['icon']['ID'], 'thumbnail', 0, ['class' => '']); ?>
                                 </div>
-                                <p>
-                                    <strong><?php echo $single['title']; ?></strong> – <?php echo $single['description']; ?>
-                                </p>
+                                <?php echo $single['description']; ?>
                             </div>
                         <?php }; ?>
                     </div>
