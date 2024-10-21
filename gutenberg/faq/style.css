@@ -140,6 +140,7 @@
     position: relative;
     padding-right: 40px;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .faq .faq-single h4 span {
@@ -174,7 +175,8 @@
 }
 
 .faq .faq-answer {
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 30px;
     border-top: 1px solid #C2C2C2;
     transition: border .3s ease;
