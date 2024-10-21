@@ -1686,6 +1686,29 @@ footer .payments-icons {
 
 /* single offer */
 
+
+/* Messenger */
+.goToMess{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: fixed;
+    top: 64%;
+    right: 15px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.goToMess:hover{
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+.goToMess:active{
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+}
+
 /* popup */
 
 .popup-btn {
@@ -1700,9 +1723,16 @@ footer .payments-icons {
     border: 3px solid #fff;
     position: fixed;
     top: 55%;
-    right: 50px;
+    right: 15px;
     cursor: pointer;
+    transition: all 0.3s linear;
     /* transform: translateX(50%); */
+}
+.popup-btn:hover{
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+.popup-btn:active{
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
 }
 
 .popup-backdrop {
@@ -1842,10 +1872,13 @@ footer .payments-icons {
 }
 
 @media (max-width:991px) {
-    .popup-btn {
-        right: 15px;
+    .goToMess {
         top:initial;
         bottom: 100px;
+    }
+    .popup-btn {
+        top:initial;
+        bottom: 180px;
     }
     #scrollUp {
         right: 15px;
