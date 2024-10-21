@@ -302,7 +302,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
                                     </svg>
                                 </div>
                                 <div class="offer-custom-price">
-                                    <?php echo $offer['theme_5']['price_1']; ?><span><?php echo $offer['theme_5']['price_2']; ?></span><?php echo $offer['theme_5']['price_3']; ?>
+                                    <b><?php echo $offer['theme_5']['price_1']; ?></b><span><?php echo $offer['theme_5']['price_2']; ?></span><?php echo $offer['theme_5']['price_3']; ?>
                                 </div>
                                 <div class="offer-description">
                                     <?php echo $offer['theme_5']['description']; ?>

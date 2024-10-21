@@ -519,6 +519,11 @@
     margin-top: 30px;
     text-align: right;
 }
+.single-offer.theme-5 .offer-custom-price b{
+    display: inline-block;
+    font-size: 100px;
+    transform: translate(0px, -22px);
+}
 
 .single-offer.theme-5 .offer-custom-price span {
     font-size: 150px;
@@ -529,7 +534,7 @@
 .single-offer.theme-5 .offer-custom-price,
 .single-offer.theme-5 em {
     color: #FFBC40;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .single-offer.theme-5 .offer-description {
@@ -545,12 +550,18 @@
 }
 
 .single-offer.theme-5 .offer-description em {
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 @media (max-width:1199px) {
     .single-offer.theme-5 .offer-left {
         padding-top: 60px;
+    }
+}
+
+@media (max-width:480px) {
+    .single-offer.theme-5 .offer-custom-price b{
+        display: initial;
     }
 }
 
