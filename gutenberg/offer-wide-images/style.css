@@ -530,13 +530,13 @@
     text-align: right;
 }
 .single-offer.theme-5 .offer-custom-price b{
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 100px;
     transform: translate(0px, -22px);
 }
 
 .single-offer.theme-5 .offer-custom-price span {
-    font-size: 150px;
+    font-size: 110px;
     font-weight: 900;
     line-height: 1;
 }
