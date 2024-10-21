@@ -23,7 +23,8 @@
     width: 65%;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    /* gap: 100px; */
+    gap: 20px
 }
 
 .faq h3 {
@@ -36,8 +37,51 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin: 30px 0;
+    /* display: none; */
+}
+.faq .download-category .faq-questions-wrapper{
+    display: none;
+}
+.faq .download-category.active .faq-questions-wrapper{
+    display: flex;
+}
+.faq .download-category .faq-cat-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    padding: 15px;
+    border-bottom: 1px solid var(--black-75, #c2c2c29b);
+    box-shadow: 0px 0px 0px 0px var(--black-75, #5C5559);
+    border-radius: 10px;
+}
+.faq .download-category .faq-cat-title h3{
+    margin: 0;
+
+}
+.faq .download-category .faq-cat-title span{
+    position: relative;
+}
+.faq .download-category .faq-cat-title span svg{
+    position: absolute;
+    left: calc(50% - 30px);
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+.faq .download-category .faq-cat-title span svg path{
+    fill:black
 }
 
+.faq .download-category.active .faq-cat-title{
+    box-shadow: 0px 4px 0px 0px var(--black-75, #5C5559);
+}
+
+.faq .download-category.active .faq-cat-title .fa-vertical{
+    opacity: 0;
+}
 .faq .contact-block-inner {
     padding: 15px 24px;
     border-radius: 20px;
@@ -132,7 +176,7 @@
     cursor: pointer;
 }
 .faq .faq-single:hover, .faq .faq-single.active{
-    box-shadow: 0px 4px 0px 0px var(--black-75, #5C5559);
+    box-shadow: 0px 2px 0px 0px var(--black-75, #5C5559);
 }
 
 
@@ -180,6 +224,15 @@
     margin-top: 30px;
     border-top: 1px solid #C2C2C2;
     transition: border .3s ease;
+}
+.faq .faq-answer p{
+    margin-bottom: 15px;
+}
+
+@media (max-width:1400px) {
+ .faq .contact-links a{
+    font-size: 21px;
+ }
 }
 
 @media (max-width:768px) {

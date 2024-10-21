@@ -94,9 +94,20 @@ require dirname(__FILE__, 2) . '/defaults.php';
                 <div class="faq-main">
                     <?php foreach (get_field('category') as $key => $category) { ?>
                         <div class="download-category" data-category="cat_<?php echo $key; ?>">
-                            <h3>
-                                <?php echo $category['title']; ?>
-                            </h3>
+                            <div class="faq-cat-title">
+                                <h3>
+                                    <?php echo $category['title']; ?>
+                                </h3>
+                                <span>
+                                    <svg class="fa-horizontal" width="34" height="1" viewBox="0 0 34 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.4345 0.5H0.0625" stroke="#5C5559"></path>
+                                    </svg>
+                                    <svg class="fa-vertical" width="2" height="37" viewBox="0 0 2 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.748045 36.5L0.748047 0.5" stroke="#5C5559"></path>
+                                    </svg>
+                                </span>
+                            </div>
+
                             <?php if (!empty($category['faq'])) { ?>
                                 <div class="faq-questions-wrapper">
                                     <?php foreach ($category['faq'] as $single) { ?>
