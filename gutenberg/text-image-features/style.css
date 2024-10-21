@@ -52,8 +52,9 @@
     line-height: 24px;
 }
 
-.text-image-features .feature-single strong {
+.text-image-features .feature-single b {
     color: #000;
+    display: block;
 }
 
 .text-image-features .feature-icon {
