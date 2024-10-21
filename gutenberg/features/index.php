@@ -15,14 +15,24 @@ require dirname(__FILE__, 2) . '/defaults.php';
         <?php if (!empty(get_field('features'))) { ?>
             <div class="features-wrapper">
                 <?php foreach (get_field('features') as $offer) { ?>
-                    <div class="single-offer">
-                        <div class="offer-icon">
-                            <?php echo wp_get_attachment_image($offer['icon']['ID'], '', 0, ['class' => '']); ?>
-                        </div>
-                        <?php echo $offer['description']; ?>
-                    </div>
-                <?php }; ?>
+                    <?php if ($offer['link']) { ?>
+                        <a href="<?php echo $offer['link']['url']; ?>" class="single-offer">
+                        <?php } else { ?>
+                            <div class="single-offer">
+                            <?php } ?>
+
+                            <div class="offer-icon">
+                                <?php echo wp_get_attachment_image($offer['icon']['ID'], '', 0, ['class' => '']); ?>
+                            </div>
+                            <?php echo $offer['description']; ?>
+
+                            <?php if ($offer['link']) { ?>
+                        </a>
+                    <?php } else { ?>
             </div>
-        <?php }; ?>
+        <?php } ?>
+    <?php }; ?>
     </div>
+<?php }; ?>
+</div>
 </section>
