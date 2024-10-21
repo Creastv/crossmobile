@@ -874,6 +874,7 @@ footer .payments-icons {
     footer .footer-payments-info {
         text-align: center;
         width: 100%;
+        margin: 30px 0;
     }
 
     footer .footer-payments-info h5 {
@@ -1887,13 +1888,18 @@ footer .payments-icons {
         display: none;
     }
 
+    .popup-backdrop{
+        padding: 15px;
+    }
     .popup-container .cta-form-wrapper {
         width: 100%;
         margin: 0;
+        border-radius: 20px;
     }
 
     .popup-container .cta-form {
         margin-left: 0;
+        border-radius: 20px;
     }
 
     .popup-container .modal-title {
@@ -1903,8 +1909,8 @@ footer .payments-icons {
     }
 
     .popup-container {
-        height: 100svh;
-        border-radius: 0;
+        /* height: 100svh; */
+        /* border-radius: 0; */
         padding: 40px 20px;
     }
 
@@ -1922,7 +1928,10 @@ footer .payments-icons {
     }
     
 }
-
+@media (max-width:768px) {
+#popup-backdrop .popup-icon{
+    display: none;
+}
 /* popup */
 
 @media (min-width:1199px) {

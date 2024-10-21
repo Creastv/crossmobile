@@ -191,8 +191,14 @@
     .contact-form .cta-form-right-wrapper .cta-form{
         max-width: 100%;
     }
+    .contact-form .contact-form-wrapper{
+        padding: 35px 0;
+    }
 }
 @media (max-width:1199px) {
+    .contact-data .contact-data-menu ul{
+        justify-content: flex-start!important;
+    }
     .contact-form .contact-form-wrapper {
         flex-wrap: wrap;
     }
@@ -207,7 +213,7 @@
     }
 
     .contact-form .contact-form-wrapper {
-        padding: 16px 10px;
+        padding: 15px 0px;
     }
 
     .contact-form .contact-form-wrapper>* {
