@@ -18,6 +18,9 @@
     position: sticky;
     top: 100px;
 }
+.faq .faq-sidebar h4 {
+    font-size: 28px;
+}
 
 .faq .faq-main {
     width: 65%;
@@ -228,12 +231,15 @@
 }
 .faq .faq-answer p{
     margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 @media (max-width:1400px) {
  .faq .contact-links a{
     font-size: 21px;
  }
+ 
 }
 
 @media (max-width:768px) {
@@ -248,10 +254,6 @@
     .faq .faq-answer {
         padding-top: 15px;
         margin-top: 15px;
-    }
-
-    .faq .faq-single h4 {
-        font-size: 18px;
     }
 
     .faq .faq-answer p {
@@ -300,27 +302,39 @@
     .faq .faq-single {
         flex-direction: column;
         padding: 20px;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .faq .faq-single a {
         font-size: 14px;
     }
 
-    .faq .contact-block-inner h5 {
+    .faq .contact-block-inner h4 {
         margin-bottom: 15px;
     }
 
 }
 
 @media (max-width:479px) {
+    .faq .download-category .faq-cat-title h3{
+        font-size: 21px;
+    }
+    .faq .faq-single h4 {
+        font-size: 16px;
+    }
     .faq .contact-links a {
         font-size: 14px;
     }
     .faq .contact-links a {
+        font-size: 14px;
+    }
+    .faq .contact-mess{
         font-size: 14px;
     }
     .faq .container{
         padding: 0;
+    }
+    .faq .faq-sidebar h4 {
+        font-size: 21px;
     }
 }
