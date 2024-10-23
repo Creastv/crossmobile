@@ -7,7 +7,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
     <div class="container">
         <div class="downloads-wrapper">
             <div class="downloads-sidebar">
-                <h4>Dokumenty</h4>
+                <!-- <h4>Dokumenty</h4>
                 <?php if (!empty(get_field('category'))) { ?>
                     <div class="downloads-categories">
                         <?php foreach (get_field('category') as $key => $category) { ?>
@@ -16,7 +16,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
                             </h5>
                         <?php }; ?>
                     </div>
-                <?php }; ?>
+                <?php }; ?> -->
                 <div class="contact-block-inner">
                     <div>
                         <h5>Dział obsługi klienta</h5>

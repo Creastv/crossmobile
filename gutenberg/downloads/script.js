@@ -22,18 +22,17 @@ $(document).on('click', '[data-scroll]', function () {
 });
 
 
-$('.download-category[data-category="cat_0"]').toggleClass('active');
+// $('.download-category[data-category="cat_0"]').toggleClass('active');
 
 $(document).on('click', '[data-category] .download-cat-title', function () {
 
     let scrollToCategory = $(this).parent().data('category');
 
     let targetElement = $('[data-category="' + scrollToCategory + '"]');
-
-    $('.download-category').removeClass('active');
-
+    if ( ! $(this).parent().hasClass('active')) {
+        $('.download-category').removeClass('active');
+    }
     targetElement.toggleClass('active');
-
     let navHeight = $('.nav-wrapper').length ? $('.nav-wrapper').outerHeight() : 0;
 
     if (targetElement.length) {
@@ -41,6 +40,4 @@ $(document).on('click', '[data-category] .download-cat-title', function () {
             scrollTop: targetElement.offset().top - (navHeight + 30)
         }, 1000); // Czas animacji w milisekundach
     }
-
-console.log(scrollToCategory)
 });
