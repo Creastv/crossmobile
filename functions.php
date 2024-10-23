@@ -61,3 +61,101 @@ register_nav_menus(array(
     'footer' => __('Menu Stopka', 'kamil-theme'),
     'privacy' => __('Menu stopka (małe)', 'kamil-theme'),
 ));
+
+/**
+ *  CRM FORM CUSTOMIZATION
+ */
+function crm_form_custom_script_enqueue() {
+    wp_enqueue_script( 'crm-forms-script', get_stylesheet_directory_uri() . '/js/crm-forms.js' );
+	wp_enqueue_script( 'b24-postcode-script', get_stylesheet_directory_uri() . '/js/b24-form-postalcode.js' );
+}
+add_action( 'wp_enqueue_scripts', 'crm_form_custom_script_enqueue' );
+
+function crm_form_custom_styles_enqueue() {
+    wp_enqueue_style( 'bitrix-form', get_stylesheet_directory_uri() . '/css/b24-form.css' );
+}
+add_action( 'wp_enqueue_scripts', 'crm_form_custom_styles_enqueue' );
+/**
+ *  CRM FORM DATE FIELD
+ */
+
+function fetch_data_from_bitrix() {
+    $all_data = [];
+    $has_more_data = true;
+    $next = null; 
+	$last_item_id = 0;
+
+    // Calculate date range
+    $currentDate = date('d.m.Y');
+    $twoYearsAhead = date('d.m.Y', strtotime('+2 years')); 
+
+    while ($has_more_data) {
+        $api_url = 'https://crossmobile.bitrix24.pl/rest/27/58wldo4yx1j4q06k/lists.element.get';
+
+        $body_data = [
+			'IBLOCK_TYPE_ID'=>"lists",
+			'IBLOCK_ID'=> 33,
+			'FILTER'=>['>=PROPERTY_105' => $currentDate, '<=PROPERTY_105' => $twoYearsAhead, ">ID"=>$last_item_id]
+        ];
+
+        $response = wp_remote_post($api_url, [
+            'body' => json_encode($body_data),
+			'headers' => [
+				'Content-Type' => 'application/json',
+			],
+			'method' => 'POST',
+			'data_format' => 'body' 
+        ]);
+
+        if (is_wp_error($response)) {
+            error_log('Error fetching data from Bitrix24: ' . $response->get_error_message());
+            break;
+        }
+
+        $body = wp_remote_retrieve_body($response);
+        $data = json_decode($body, true);
+
+        if (isset($data['result']) && !empty($data['result'])) {
+			$last_item = end($data['result']);
+        	$last_item_id = isset($last_item['ID']) ? $last_item['ID'] : null;
+            $all_data = array_merge($all_data, $data['result']);
+        }else{
+			$has_more_data = false;
+		}
+
+        $has_more_data = isset($data['next']) ? true : false;
+    }
+
+    return $all_data;
+}
+
+
+function add_custom_styles_to_head() {
+    if (is_page('przenies-numer')) {
+        $bitrix_data = fetch_data_from_bitrix();
+        
+        $output = '';
+
+        if (is_array($bitrix_data)) {
+            $output .= '<style>';
+			foreach ($bitrix_data as $item) {
+				if (isset($item["PROPERTY_105"]) && is_array($item["PROPERTY_105"])) {
+					foreach($item["PROPERTY_105"] as $key => $value){
+						if ($value) {
+							$date = DateTime::createFromFormat("d.m.Y", $value);
+							if ($date) { 
+								$formattedDate = $date->format("Y-n-j"); // Format date without leading zeros
+								$output .= 'table tr td[data-id="' . $formattedDate .'"]{ pointer-events: none; }';
+							}
+							break;
+						}
+					}
+				}
+			}
+			$output .= '</style>';
+			
+			echo $output;
+        }
+    }
+}
+add_action('wp_head', 'add_custom_styles_to_head');

@@ -1,0 +1,118 @@
+/*b24-form*/
+.b24-form-control-comment {
+  font-size: 90%!important;
+  line-height: 22px!important;
+}
+
+.b24-form-wrapper {
+  border-width: 2px !important;
+  border-radius: 6px !important;
+  background-color: #ffffff !important;
+  --b24-background-color: #fff !important;
+}
+
+.b24-info_accent {
+  background-color: #e81f76;
+  padding: 4px 9px!important;
+  border-radius: 6px!important;
+  color: #ffffff !important;
+  font-size: 18px!important;
+}
+.b24-info_accent_alt {
+  border: 1px solid #e81f76;
+  padding: 2px 7px!important;
+  border-radius: 6px!important;
+  color: #e81f76 !important;
+  font-size: 18px!important;
+}
+
+.b24-form-sign {
+  display: none !important;
+}
+
+.b24-form-click-btn {
+  height: 50px !important;
+  border: 2px solid !important;
+  color: rgb(232, 31, 118) !important;
+  border-color: rgb(232, 31, 118) !important;
+  background-color: transparent !important;
+}
+
+.b24-form-click-btn-wrapper button:hover,
+.b24-form-click-btn-wrapper button:focus,
+.et_pb_code_inner .b24-form-click-btn-wrapper-15 button:hover,
+.et_pb_code_inner .b24-form-click-btn-wrapper-15 button:focus {
+  border: 2px solid !important;
+  color: rgb(232, 31, 118) !important;
+  border-color: rgb(232, 31, 118) !important;
+  background-color: transparent !important;
+}
+
+.b24-window-close {
+  right: 12px !important;
+}
+
+.b24-window-scroll-anchor {
+  height: 0px !important;
+}
+
+.b24-form-control-desc {
+  font: 600 18px/24px var(--b24-font-family) !important;
+}
+
+.b24-form-success {
+  background-color: rgba(232, 31, 118, 1) !important;
+}
+
+.b24-form-state-container .b24-form-state-text {
+  color: #fff !important;
+}
+
+.b24-form-field .b24-info_accent_alt_title {
+  margin-bottom: -15px!important;
+  font: 600 18px / 24px var(--b24-font-family)!important;
+  color: var(--b24-text-color)!important;
+}
+
+.b24-form-control-DEAL_UF_CRM_1728304003 .b24-form-control-desc {
+  text-decoration: underline!important;
+  cursor: pointer!important;
+}
+
+.b24-form-header-title {
+  padding: 0px 32px !important;
+  margin-bottom: 0px !important;
+}
+.b24-form-header-title svg {
+  max-width: 440px!important;
+}
+
+.b24-form-field-DEAL_UF_CRM_1704983704,
+.b24-form-field-DEAL_UF_CRM_1704984001,
+.b24-form-field-DEAL_UF_CRM_1704984358,
+.b24-form-field-DEAL_UF_CRM_1705065542,
+.b24-form-field-DEAL_UF_CRM_1705065561 {
+	display: none !important;
+}
+
+.entry-content thead th, .entry-content tr th{
+	padding: 0.3em 0.1em 1.8em!important;
+}
+  
+.vdpCell{
+	padding: 0.5em 0!important;
+}
+  
+table tr td:nth-child(1),
+table tr td:nth-child(7){
+	pointer-events: none!important;
+}
+
+.b24-form-header{
+	background: #0550BB!important;
+}
+
+.b24-form-header-description{
+	color: #fff!important;
+	font: 17px / 19px var(--b24-font-family)!important;
+}
