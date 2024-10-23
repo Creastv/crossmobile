@@ -1108,7 +1108,7 @@ footer .payments-icons {
     flex: 1 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px
+    gap: 20px
 }
 
 .included-description-wrapper {
@@ -1117,6 +1117,7 @@ footer .payments-icons {
     align-items: flex-start;
     width: 100%;
     gap: 50px;
+    margin-bottom: 20px;
 }
 .included-description-wrapper > div {
     flex: auto;
@@ -1134,9 +1135,9 @@ footer .payments-icons {
     /* margin-bottom: 10px; */
     color: #291B22;
 }
-.included-description p{
+/* .included-description p{
     margin-top: 10px;
-}
+} */
 
 .included-featured {
     color: #E81F76;
@@ -1474,6 +1475,12 @@ footer .payments-icons {
 }
 
 @media (max-width:1199px) {
+    .offer-included-single {
+        flex-wrap: wrap;
+    }
+    .included-description{
+        width: 100%;
+    }
     .single-offer .hero .custom-icon {
         left: 80% !important;
         transform: translateY(-80%) translateX(-50%);
@@ -1524,7 +1531,7 @@ footer .payments-icons {
         width: 50%;
     }
     .included-description-wrapper {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap:20px
     }
     .included-description-wrapper{
@@ -1564,7 +1571,7 @@ footer .payments-icons {
         width: 50%;
     }
     .included-description-wrapper {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap:10px
     }
     .included-description-wrapper{
@@ -1631,12 +1638,12 @@ footer .payments-icons {
 
     }
     .included-description-wrapper {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
-    .included-featured {
+    /* .included-featured {
         margin-bottom: 24px;
-    }
+    } */
    
 }
 @media (max-width:491px) {
@@ -1877,11 +1884,16 @@ footer .payments-icons {
 @media (max-width:991px) {
     .goToMess {
         top:initial;
-        bottom: 100px;
+        bottom: 120px;
+        width: 50px;
+        height: 50px;
     }
     .popup-btn {
         top:initial;
         bottom: 180px;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
     }
     #scrollUp {
         right: 15px;
