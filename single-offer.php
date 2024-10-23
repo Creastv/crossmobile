@@ -35,7 +35,7 @@
             <div class="offer-included-wrapper">
                 <?php if (!empty(get_field('included'))) { ?>
                     <div class="offer-included-items-wrap">
-                        <h2 class="offer-included-items-title">Pakiet danych:</h2>
+                        <h2 class="offer-included-items-title">Pakiet danych</h2>
                         <div class="offer-included-items">
                             <?php foreach (get_field('included') as $single) { ?>
                                 <?php if (!empty($single['description'])) { ?>
@@ -63,7 +63,7 @@
                 <?php }; ?>
                 <?php if (!empty(get_field('included_two'))) { ?>
                     <div class="offer-included-items-wrap">
-                        <h2 class="offer-included-items-title">W Twoim Abonamencie:</h2>
+                        <h2 class="offer-included-items-title">Abonament</h2>
                         <div class="offer-included-items">
                             <?php foreach (get_field('included_two') as $single) { ?>
                                 <?php if (!empty($single['description'])) { ?>
