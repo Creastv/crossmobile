@@ -1117,7 +1117,7 @@ footer .payments-icons {
     align-items: flex-start;
     width: 100%;
     gap: 50px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .included-description-wrapper > div {
     flex: auto;
