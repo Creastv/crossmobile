@@ -1088,8 +1088,12 @@ footer .payments-icons {
     gap: 30px;
 }
 
-.offer-included-wrapper>h2 {
-    margin-bottom: 30px;
+.offer-included-items-wrap {
+    margin-bottom: 50px;
+}
+
+.offer-included-items-title {
+    margin: 30px 0;
 }
 
 .offer-included-single {
@@ -1648,6 +1652,9 @@ footer .payments-icons {
    
 }
 @media (max-width:491px) {
+    .offer-included-items-wrap {
+        margin-bottom: 30px;
+    }
 .single-post .hero{
     padding: 100px 0 50px;
 }
