@@ -228,11 +228,11 @@
         </defs>
     </svg>
 </div>
-<div class="goToMess">
+<!-- <div class="goToMess">
     <a href="https://m.me/CrossMobileEU/" target="_blank">
         <img src="<?php bloginfo('template_url'); ?>/assets/images/facebook.png" alt="Napisz do nas!">
     </a>
-</div>
+</div> -->
 
 <?php if (!empty(get_field('modal_show', 'option'))) { ?>
 
