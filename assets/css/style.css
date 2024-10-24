@@ -1651,16 +1651,16 @@ footer .payments-icons {
         /* flex-direction: column; */
     }
 
-    /* .included-featured {
-        margin-bottom: 24px;
-    } */
+    .included-featured {
+        font-size: 18px;
+    }
    
 }
 @media (max-width:491px) {
     .single-offer .hero .hero-wrapper h1{
         font-size: 31px!important;
         line-height: 1!important;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .offer-included-items-wrap {
         margin-bottom: 30px;
