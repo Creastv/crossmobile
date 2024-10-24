@@ -121,20 +121,49 @@ $(function () {
 });
 
 
-// // Wyświetlenie modala na 30s po załadowaniu strony
-// $(function () {
-//     if (!getCookie('modalShown')) {
-//         setTimeout(() => {
-//             $('#popup-backdrop').addClass('popup-show');
-//             setCookie('modalShown', 1, 1);
-//         }, 30000);
-//     }
-// })
+// Wyświetlenie modala na 30s po załadowaniu strony
+$(function () {
+    if (!getCookie('modalShown')) {
+        setTimeout(() => {
+            $('#popup-backdrop').addClass('popup-show');
+            setCookie('modalShown', 1, 1);
+        }, 3000);
+    }
+})
 
 // Wyświetlenie modala na wyjazd myszką ze strony
-$(document).on('mouseleave', function (e) {
-    if (!getCookie('modalLeave')) {
-        $('#popup-backdrop').addClass('popup-show');
-        setCookie('modalLeave', 1, 1);
-    };
-});
+// $(document).on('mouseleave', function (e) {
+//     if (!getCookie('modalLeave')) {
+//         $('#popup-backdrop').addClass('popup-show');
+//         setCookie('modalLeave', 1, 1);
+//     };
+// });
+
+// $("p").hover(function(){
+
+// $('input[name="phone"]').attr('placeholder', 'Texto de marcador de posición');
+// })
+
+$(document).ready(function(){
+    $(".cta-form").hover(function(){
+        $('input[name="phone"]').attr('placeholder', '+48XXXXXXXXX');
+      }, function(){
+        $('input[name="phone"]').attr('placeholder', 'Twój nr telefonu');
+
+    });
+  });
+
+  var timeout;
+
+function resetTimer(){
+  clearTimeout(timeout);
+  console.log("Clearing timer because of activity");
+  timeout = setTimeout(function(){
+    // if (!getCookie('modalLeave')) {
+                $('#popup-backdrop').addClass('popup-show');
+                setCookie('modalLeave', 1, 1);
+            // };
+  }, 30000);
+}
+document.onmousemove = resetTimer;
+document.onkeypress = resetTimer;
