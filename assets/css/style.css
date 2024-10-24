@@ -1140,6 +1140,10 @@ footer .payments-icons {
     color: #291B22;
     line-height: 1.3;
 }
+.included-description h3 {
+    font-size: 21px;
+}
+
 /* .included-description p{
     margin-top: 10px;
 } */
