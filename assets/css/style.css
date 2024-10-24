@@ -737,7 +737,7 @@ footer .footer-logo {
 
 footer .footer-copy {
     border-top: 1px solid rgba(255, 255, 255, 0.20);
-    padding: 22px 20px;
+    padding: 22px 0px;
     color: #FFF;
     font-size: 14px;
     font-weight: 300;
@@ -752,7 +752,7 @@ footer .footer-copy span {
 
 footer .footer-data-wrapper {
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-    padding: 50px 20px 20px;
+    padding: 50px 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -800,7 +800,7 @@ footer .footer-data {
 }
 
 footer .footer-menu-wrapper {
-    padding: 20px 20px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
