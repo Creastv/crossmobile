@@ -1500,6 +1500,9 @@ footer .payments-icons {
     .single-offer .offer-price {
         font-size: 80px;
     }
+    .single-offer .price{
+        font-size: 120px;
+    }
     .single-offer .price-currency{
         font-size: 21px;
     }
