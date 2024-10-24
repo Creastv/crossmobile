@@ -20,6 +20,7 @@
     transition: background .3s ease, border .3s ease, color .3s ease, box-shadow .3s ease;
     border: 1px solid transparent;
     border-left: 1px solid #C2C2C2;
+    background-color: #fff;
     display: flex;
     align-items: center;
     gap: 20px;
