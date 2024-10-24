@@ -1368,8 +1368,8 @@ footer .payments-icons {
 
 .single-offer .hero-offer .g-icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -20px;
+    top: -10px;
     transform: translateY(50%) translateX(-50%);
     left: auto;
     max-width: 70px;
