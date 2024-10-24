@@ -1606,6 +1606,7 @@ footer .payments-icons {
     .single-offer .hero .hero-wrapper h1{
         font-size: 51px!important;
         line-height: 1!important;
+        padding: 30px 0;
     }
     .single-offer .hero-offer{
         width: 50%;
@@ -1713,7 +1714,7 @@ footer .payments-icons {
     .single-offer .hero .hero-wrapper h1{
         font-size: 31px!important;
         line-height: 1!important;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     .offer-included-items-wrap {
         margin-bottom: 30px;
