@@ -1495,7 +1495,7 @@ footer .payments-icons {
         height: auto;
     }
     .single-offer .hero-offer h2{
-        font-size: 31px;
+        font-size: 28px;
     }
 }
 @media (max-width:1440px) {
@@ -1591,6 +1591,9 @@ footer .payments-icons {
 }
 
 @media (max-width:1024px) {
+    .single-offer .hero-offer h2{
+        font-size: 24px;
+    }
     .single-offer .hero .hero-wrapper h1{
         font-size: 51px!important;
         line-height: 1!important;
@@ -1633,6 +1636,9 @@ footer .payments-icons {
 }
 
 @media (max-width:768px) {
+    .single-offer .hero-offer h2{
+        font-size: 21px;
+    }
     .single-offer .hero .custom-icon {
         left: 50% !important;
         transform: translateY(-80%) translateX(-50%);
