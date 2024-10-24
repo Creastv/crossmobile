@@ -65,12 +65,14 @@ require dirname(__FILE__, 2) . '/defaults.php';
                         </div>
                     </div>
                     <?php if (get_field('messenger_text')) { ?>
-                        <a href="#" class="contact-mess">
-                            <?php echo wp_get_attachment_image(get_field('messenger_icon')['ID'], 'thumbnail', 0, ['class' => '']); ?>
-                            <p>
-                                <?php echo get_field('messenger_text'); ?>
-                            </p>
-                        </a>
+                        <?php if (get_field('messenger_text')) { ?>
+                            <a href="#" class="contact-mess">
+                                <?php echo wp_get_attachment_image(get_field('messenger_icon')['ID'], 'thumbnail', 0, ['class' => '']); ?>
+                                <p>
+                                    <?php echo get_field('messenger_text'); ?>
+                                </p>
+                            </a>
+                        <?php } ?>
                     <?php } ?>
                 </div>
             </div>
