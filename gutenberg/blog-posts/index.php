@@ -32,7 +32,7 @@ $posts = get_posts(
                         <div class="post-description">
                             <?php echo get_the_excerpt($post->ID); ?>
                         </div>
-                        <p class="btn-details">Szczegóły oferty</p>
+                        <p class="btn-details">Czytaj więcej</p>
                     </div>
                 </a>
             <?php }; ?>

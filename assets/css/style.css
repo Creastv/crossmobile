@@ -161,6 +161,11 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+.error-page{
+    padding: 200px 0;
+    text-align: center; 
+}
+
 .container {
     position: relative;
     max-width: 1630px;

@@ -6,9 +6,11 @@
             <h1>
                 Błąd 404
             </h1>
-            <h2>
+            <br>
+            <p>
                 Przepraszamy, strona nie została znaleziona
-            </h2>
+            </p>
+            <br>
 
             <div class="btn-wrapper">
                 <a href="<?php echo get_home_url(); ?>" class="btn btn-primary" title="Przejdź do strony głównej">
