@@ -7,6 +7,9 @@
     display: flex;
     gap: 15px 30px;
 }
+.offer-horizontal-images .offer-horizontal-images-wrapper .offer-price {
+    padding: 20px 0;
+}
 
 .offer-horizontal-images .single-offer.offer-image {
     border-radius: 10px;

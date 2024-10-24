@@ -1417,7 +1417,7 @@ footer .payments-icons {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px 33px;
+    gap: 15px;
     margin: 15px 0;
 }
 
