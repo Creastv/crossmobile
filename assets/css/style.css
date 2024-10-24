@@ -1471,20 +1471,6 @@ footer .payments-icons {
         transform: translateY(-80%) translateX(-50%);
         /* right: 50px; */
     }
-}
-@media (max-width:1440px) {
-
-    .single-offer .single-feature {
-        font-size: 18px;
-        gap:10px
-    }
-    .single-offer .offer-buttons{
-        gap:10px 20px;
-    }
-    .single-offer .offer-buttons a{
-        padding: 10px 20px;
-        font-size: 16px;
-    }
     .single-offer .hero-offer .g-icon{
         max-width: 50px;
         right: -15px;
@@ -1494,6 +1480,27 @@ footer .payments-icons {
         width: 100%;
         height: auto;
     }
+    .single-offer .hero-offer h2{
+        font-size: 31px;
+    }
+}
+@media (max-width:1440px) {
+
+    .single-offer .single-feature {
+        font-size: 16px;
+        gap:10px
+    }
+    .single-offer .offer-buttons{
+        gap:10px 20px;
+    }
+    .single-offer .offer-buttons a{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .single-offer .hero-offer{
+        padding: 10px 10px 30px;
+    }
+
 
 }
 
