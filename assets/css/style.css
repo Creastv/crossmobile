@@ -1093,7 +1093,7 @@ footer .payments-icons {
 }
 
 .offer-included-items-title {
-    margin: 30px 0;
+    margin: 30px 0 50px;
 }
 
 .offer-included-single {
@@ -1103,7 +1103,7 @@ footer .payments-icons {
 }
 
 .offer-included-single .included-icon {
-    max-width: 50px;
+    max-width: 35px;
     width: 100%;
     align-self: flex-start;
 }
@@ -1482,6 +1482,7 @@ footer .payments-icons {
 @media (max-width:1199px) {
     .offer-included-single {
         flex-wrap: wrap;
+        gap:10px;
     }
     .included-description{
         width: 100%;
@@ -1652,6 +1653,11 @@ footer .payments-icons {
    
 }
 @media (max-width:491px) {
+    .single-offer .hero .hero-wrapper h1{
+        font-size: 31px!important;
+        line-height: 1!important;
+        margin-bottom: 50px;
+    }
     .offer-included-items-wrap {
         margin-bottom: 30px;
     }
