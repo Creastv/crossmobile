@@ -1156,7 +1156,10 @@ footer .payments-icons {
     line-height: 1.2;
     white-space: nowrap;
 }
-
+.included-featured-blue{
+    font-size: 41px;
+    color: #0451BD;
+}
 .single-offer .btn-section {
     padding: 40px 0;
 }
