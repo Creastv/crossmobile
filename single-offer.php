@@ -50,7 +50,7 @@
                                                         <?php echo $desc['description']; ?>
                                                     </div>
                                                     <div class="included-featured <?php echo $desc['zmienic_kolor_na_niebieski'] ? 'included-featured-blue ' : false; ?>">
-                                                        <?php echo $desc['text_pink']; ?><small><?php echo $desc['sufix']; ?></small>
+                                                        <?php echo $desc['text_pink']; ?> <small><?php echo $desc['sufix']; ?></small>
                                                     </div>
                                                 </div>
                                             <?php }; ?>
@@ -78,7 +78,7 @@
                                                         <?php echo $desc['description']; ?>
                                                     </div>
                                                     <div class="included-featured <?php echo $desc['zmienic_kolor_na_niebieski'] ? 'included-featured-blue ' : false; ?>">
-                                                        <?php echo $desc['text_pink']; ?><small><?php echo $desc['sufix']; ?></small>
+                                                        <?php echo $desc['text_pink']; ?> <small><?php echo $desc['sufix']; ?></small>
                                                     </div>
                                                 </div>
                                             <?php }; ?>
