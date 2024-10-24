@@ -102,7 +102,9 @@
     height: 3px;
     background: #E81F76;
 }
-
+.text-image .text-wrapper p{
+    margin-bottom: 15px;
+}
 .text-image .text-wrapper {
     width: 60%;
     flex: 1 auto;
