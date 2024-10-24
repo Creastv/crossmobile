@@ -1375,7 +1375,7 @@ footer .payments-icons {
     font-weight: 900;
     text-transform: uppercase;
     line-height: 0.8;
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
 
 .single-offer .price {
@@ -1429,6 +1429,9 @@ footer .payments-icons {
     font-size: 21px;
     font-weight: 800;
     line-height: 1.2
+}
+.single-offer .single-feature {
+    width: 30px;
 }
 
 .single-offer .hero-offer.offer-pink .single-feature,
