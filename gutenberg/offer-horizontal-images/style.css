@@ -351,4 +351,16 @@
     .offer-horizontal-images .single-offer {
         width: 100%;
     }
+
+}
+@media (max-width:480px) {
+    .offer-horizontal-images .single-offer .offer-price div > span{
+        font-size: 60px!important;
+    }
+    .offer-horizontal-images .single-offer .offer-price div .price-currency {
+        font-size: 18px!important;
+    }
+    .offer-horizontal-images .offer-text-wrapper{
+        justify-content: center;
+    }
 }
