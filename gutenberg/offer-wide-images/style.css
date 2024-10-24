@@ -10,6 +10,7 @@
     gap: 15px 30px;
 }
 
+
 .offer-wide-images .single-offer {
     display: flex;
     align-items: center;
@@ -371,6 +372,7 @@
 .single-offer.theme-3 .offer-price {
     color: #fff;
     font-size: 79px;
+    padding: 20px 0;
 }
 
 .single-offer.theme-3 .price-currency {
