@@ -1473,14 +1473,28 @@ footer .payments-icons {
     }
 }
 @media (max-width:1440px) {
-    /* .single-offer .hero .hero-wrapper h1 {
-        font-size: 30px;
-        max-width: 60%;
-    } */
 
-    /* .single-offer .hero-offer {
-        max-width: 500px;
-    } */
+    .single-offer .single-feature {
+        font-size: 18px;
+        gap:10px
+    }
+    .single-offer .offer-buttons{
+        gap:10px 20px;
+    }
+    .single-offer .offer-buttons a{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .single-offer .hero-offer .g-icon{
+        max-width: 50px;
+        right: -15px;
+
+    }
+    .single-offer .hero-offer .g-icon svg{
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 @media (max-width:1199px) {
