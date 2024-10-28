@@ -423,7 +423,7 @@
 
 @media (max-width:479px) {
     .offer-boxes .offer-boxes-wrapper {
-        padding: 0 0;
+        padding: 0 15px;
     }
     .swiper-button-prev, .swiper-button-next{
         display: none!important;
