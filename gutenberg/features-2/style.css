@@ -73,5 +73,10 @@
     .features-2 .single-offer em strong {
         font-weight: 24px;
     }
+    .features-2 .single-offer img,
+.features-2 .single-offer svg {
+    min-width: 30px;
+    max-width: 30px;
+}
 
 }
