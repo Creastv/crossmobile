@@ -1587,11 +1587,11 @@ footer .payments-icons {
     .offer-included-wrapper {
         /* max-width: 100%; */
         /* order: 1; */
-        width: 50%;
-        padding-right: 40px;
+        /* width: 50%; */
+        /* padding-right: 40px; */
     }
     .single-offer .hero-offer{
-        width: 50%;
+        /* width: 50%; */
         margin-top: -50px;
     }
     .offer-included .container{
@@ -1623,9 +1623,9 @@ footer .payments-icons {
     .single-offer .hero {
         padding-bottom: 40px;
     }
-    .single-offer .hero-offer{
+    /* .single-offer .hero-offer{
         width: 50%;
-    }
+    } */
     .included-description-wrapper {
         /* flex-direction: column; */
         gap:20px
@@ -1648,7 +1648,7 @@ footer .payments-icons {
         padding: 30px 0;
     }
     .single-offer .hero-offer{
-        width: 50%;
+        /* width: 50%; */
         margin-top: -100px;
     }
 
@@ -1664,7 +1664,7 @@ footer .payments-icons {
     .offer-included-wrapper {
         /* max-width: 100%; */
         /* order: 1; */
-        width: 50%;
+        /* width: 50%; */
         padding-right: 40px;
     }
     .single-offer .hero-offer{
