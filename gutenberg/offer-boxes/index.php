@@ -159,7 +159,7 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                 // Optional parameters
                 loop: true,
                 slidesPerView: 1,
-                spaceBetween: 30,
+                spaceBetween: 10,
                 pagination: {
                     el: "#<?php echo $mySectionID; ?> .swiper-pagination",
                     clickable: true,
@@ -168,23 +168,32 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                 breakpoints: {
                     479: {
                         slidesPerView: 1,
-                        spaceBetween: 30,
+                        spaceBetween: 10,
                         pagination: true
 
                     },
 
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 30,
+                        spaceBetween: 10,
                         navigation: {
                             nextEl: '#<?php echo $mySectionID; ?> .swiper-button-next.OfferSwiperRight',
                             prevEl: '#<?php echo $mySectionID; ?> .swiper-button-prev.OfferSwiperLeft',
                         },
                         pagination: false
                     },
-                    1199: {
+                    1024: {
                         slidesPerView: 3,
-                        spaceBetween: 30,
+                        spaceBetween: 10,
+                        navigation: {
+                            nextEl: '#<?php echo $mySectionID; ?> .swiper-button-next.OfferSwiperRight',
+                            prevEl: '#<?php echo $mySectionID; ?> .swiper-button-prev.OfferSwiperLeft',
+                        },
+                        pagination: false
+                    },
+                    1190: {
+                        slidesPerView: 4,
+                        spaceBetween: 10,
                         // Navigation arrows
                         navigation: {
                             nextEl: '#<?php echo $mySectionID; ?> .swiper-button-next.OfferSwiperRight',
