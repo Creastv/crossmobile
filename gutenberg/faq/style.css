@@ -69,11 +69,11 @@
 }
 .faq .download-category .faq-cat-title span svg{
     position: absolute;
-    left: calc(50% - 30px);
+    left: -10px;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 .faq .download-category .faq-cat-title span svg path{
     fill:black
@@ -193,7 +193,7 @@
 
 .faq .faq-single h4 span {
     position: absolute;
-    right: 10px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -203,8 +203,8 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 .faq .faq-single .fa-vertical {

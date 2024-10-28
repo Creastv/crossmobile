@@ -298,4 +298,7 @@
         width: 15px;
         height: 15px;
     }
+    .downloads .downloads-main{
+        gap:10px;
+    }
 }
