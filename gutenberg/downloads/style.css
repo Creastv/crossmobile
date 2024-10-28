@@ -291,4 +291,11 @@
     .downloads .download-single p{
         font-size: 16px;
     }
+    .downloads .download-category .download-cat-title h3{
+        font-size: 16px;
+    }
+    .downloads .download-category .download-cat-title span svg{
+        width: 15px;
+        height: 15px;
+    }
 }
