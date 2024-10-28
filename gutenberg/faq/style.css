@@ -316,6 +316,9 @@
 }
 
 @media (max-width:479px) {
+    .faq{
+        padding-bottom: 10px;
+    }
     .faq .download-category .faq-cat-title h3{
         font-size: 21px;
     }
