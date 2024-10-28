@@ -287,7 +287,11 @@
     font-size: 16px;
     font-weight: 600;
 }
-
+@media (max-width:1366px) {
+    .topup-boxes .tab-single {
+        gap:10px
+    }
+}
 @media (max-width:1024px) {
     .topup-boxes .tab-single {
         flex-wrap: wrap;
