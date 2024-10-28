@@ -137,19 +137,19 @@ require dirname(__FILE__, 2) . '/defaults.php';
                 <div class="text-btn-wrapper <?php if ($key == 0) echo 'active'; ?>" data-tab="top-up_<?php echo $key; ?>">
 
                     <section class=" features-2">
-                        <div class="container container-lg">
-                            <div class="features-wrapper">
-                                <?php
-                                $zalety = $tab['features'];
-                                foreach ($zalety as $zal) { ?>
-                                    <div class="single-offer">
-                                        <div class="offer-icon">
-                                            <?php echo wp_get_attachment_image($zal['icon']['ID'], '', 0, ['class' => '']); ?>
-                                        </div>
-                                        <?php echo $zal['description']; ?>
+
+                        <div class="features-wrapper">
+                            <?php
+                            $zalety = $tab['features'];
+                            foreach ($zalety as $zal) { ?>
+                                <div class="single-offer">
+                                    <div class="offer-icon">
+                                        <?php echo wp_get_attachment_image($zal['icon']['ID'], '', 0, ['class' => '']); ?>
                                     </div>
-                                <?php } ?>
-                            </div>
+                                    <?php echo $zal['description']; ?>
+                                </div>
+                            <?php } ?>
+
                     </section>
                 </div>
         </div>
