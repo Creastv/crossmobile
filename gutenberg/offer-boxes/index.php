@@ -213,6 +213,7 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                     }
                 },
 
+
             });
         </script>
     <?php }; ?>

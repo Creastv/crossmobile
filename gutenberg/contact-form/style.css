@@ -140,7 +140,7 @@
 .contact-form .wpcf7-form {
     display: flex;
     flex-wrap: wrap;
-    gap: 19px;
+    gap: 25px;
 }
 
 .contact-form .wpcf7-form>div {

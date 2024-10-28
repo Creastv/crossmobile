@@ -1097,6 +1097,8 @@ footer .payments-icons {
     left: 0;
     top: 100%;
     font-size: 12px;
+    margin-top: 4px;
+    margin-left: 20px;
 }
 
 .wpcf7-spinner {
@@ -2043,6 +2045,9 @@ footer .payments-icons {
     }
     .popup-bg {
         display: none;
+    }
+    .popup-backdrop .wpcf7-form-control-wrap{
+        margin-bottom: 20px;
     }
 
     .popup-backdrop{
