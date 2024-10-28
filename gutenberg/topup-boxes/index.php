@@ -130,14 +130,14 @@ require dirname(__FILE__, 2) . '/defaults.php';
 
 <?php if (!empty(get_field('top-up'))) { ?>
     <section class="text-btn">
-        <div class="container ">
-            <?php foreach (get_field('top-up') as $key => $tab) {
 
-            ?>
-                <div class="text-btn-wrapper <?php if ($key == 0) echo 'active'; ?>" data-tab="top-up_<?php echo $key; ?>">
+        <?php foreach (get_field('top-up') as $key => $tab) {
 
-                    <section class=" features-2">
+        ?>
+            <div class="text-btn-wrapper <?php if ($key == 0) echo 'active'; ?>" data-tab="top-up_<?php echo $key; ?>">
 
+                <section class=" features-2">
+                    <div class="container container-lg">
                         <div class="features-wrapper">
                             <?php
                             $zalety = $tab['features'];
@@ -149,12 +149,12 @@ require dirname(__FILE__, 2) . '/defaults.php';
                                     <?php echo $zal['description']; ?>
                                 </div>
                             <?php } ?>
+                        </div>
+                </section>
+            </div>
 
-                    </section>
-                </div>
+        <?php }; ?>
         </div>
-    <?php }; ?>
-    </div>
     </section>
 <?php }; ?>
 
