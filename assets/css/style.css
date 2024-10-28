@@ -1167,6 +1167,9 @@ footer .payments-icons {
     gap: 50px;
     /* margin-bottom: 20px; */
 }
+.included-description-wrapper h2{
+    font-size: 28px;
+}
 .included-description-wrapper > div {
     flex: auto;
 }
