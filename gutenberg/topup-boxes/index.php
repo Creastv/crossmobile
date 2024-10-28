@@ -101,12 +101,14 @@ require dirname(__FILE__, 2) . '/defaults.php';
                             </div>
                         <?php }; ?>
                     <?php }; ?>
+
                 </div>
+
+
             <?php }; ?>
         </div>
     </div>
 </section>
-
 <?php if (!empty(get_field('top-up'))) { ?>
     <section class="text-btn">
         <div class="container ">
@@ -126,8 +128,62 @@ require dirname(__FILE__, 2) . '/defaults.php';
     </section>
 <?php }; ?>
 
+<?php if (!empty(get_field('top-up'))) { ?>
+    <section class="text-btn">
+        <div class="container ">
+            <?php foreach (get_field('top-up') as $key => $tab) {
+
+            ?>
+                <div class="text-btn-wrapper <?php if ($key == 0) echo 'active'; ?>" data-tab="top-up_<?php echo $key; ?>">
+
+                    <section class=" features-2">
+                        <div class="container container-lg">
+                            <div class="features-wrapper">
+                                <?php
+                                $zalety = $tab['features'];
+                                foreach ($zalety as $zal) { ?>
+                                    <div class="single-offer">
+                                        <div class="offer-icon">
+                                            <?php echo wp_get_attachment_image($zal['icon']['ID'], '', 0, ['class' => '']); ?>
+                                        </div>
+                                        <?php echo $zal['description']; ?>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                    </section>
+                </div>
+        </div>
+    <?php }; ?>
+    </div>
+    </section>
+<?php }; ?>
 
 <script>
+    function setEqualHeight() {
+        let maxHeight = 0;
+
+        // Resetujemy wysokości, aby obliczenia były poprawne po zmianie rozmiaru okna
+        $('.features-2 .single-offer').css('height', 'auto');
+
+        // Znajdź najwyższy element
+        $('.features-2 .single-offer').each(function() {
+            let thisHeight = $(this).outerHeight();
+            if (thisHeight > maxHeight) {
+                maxHeight = thisHeight;
+            }
+        });
+
+        // Ustaw każdemu elementowi najwyższą wysokość
+        $('.features-2 .single-offer').css('height', maxHeight + 'px');
+    }
+
+    // Uruchom funkcję po załadowaniu strony
+    setEqualHeight();
+
+    // Uruchom funkcję również przy zmianie rozmiaru okna
+    $(window).on('resize', function() {
+        setEqualHeight();
+    });
     $(function() {
         if (window.location.hash) {
             setTimeout(() => {
@@ -139,6 +195,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
                 } else if (window.location.hash == '#Resources') {
                     $("[tab-href]:nth-child(3)").click();
                 }
+                setEqualHeight();
             }, 100);
         }
     })
