@@ -159,7 +159,7 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                 // Optional parameters
                 loop: true,
                 slidesPerView: 1,
-                spaceBetween: 10,
+                spaceBetween: 30,
                 pagination: {
                     el: "#<?php echo $mySectionID; ?> .swiper-pagination",
                     clickable: true,
