@@ -1029,13 +1029,13 @@ footer .payments-icons {
 .single-post-content p{
     font-weight: 300;
     line-height: 1.4;
-    margin-bottom: 20px;
-}
-.single-post-content li{
     margin-bottom: 15px;
 }
+.single-post-content li{
+    margin-bottom: 10px;
+}
 .single-post-content .wp-block-heading{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
 }
 /* single post */
