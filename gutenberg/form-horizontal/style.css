@@ -243,6 +243,7 @@
 @media (max-width:540px) {
     .cta-form-horizontal .wpcf7-form-control-wrap[data-name="phone"] {
         width: 100%;
+        margin-bottom: 25px;
     }
 
     .cta-form-horizontal .wpcf7-form-control.wpcf7-submit {
