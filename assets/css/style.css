@@ -1565,6 +1565,9 @@ footer .payments-icons svg {
     .single-offer .hero-wrapper .hero-title h1{
         font-size: 44px;
     }
+    .single-offer .hero-wrapper .hero-title h1 small{
+        font-size: 33px;
+    }
 
     .single-offer .single-feature {
         font-size: 16px;
@@ -1664,6 +1667,9 @@ footer .payments-icons svg {
         font-size: 51px!important;
         line-height: 1!important;
         padding: 30px 0;
+    }
+    .single-offer .hero-wrapper .hero-title h1 small{
+        font-size: 39px;
     }
     
     .single-offer .hero-offer{
@@ -1793,7 +1799,7 @@ footer .payments-icons svg {
         /* margin-bottom: 20px; */
     }
     .single-offer .hero-wrapper .hero-title h1 small{
-        font-size: 21px;
+        font-size: 23px;
     }
     .offer-included-items-wrap {
         margin-bottom: 30px;
