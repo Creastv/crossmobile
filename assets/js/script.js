@@ -157,13 +157,13 @@ $(document).ready(function(){
 
 function resetTimer(){
   clearTimeout(timeout);
-  console.log("Clearing timer because of activity");
+//   console.log("Clearing timer because of activity");
   timeout = setTimeout(function(){
     // if (!getCookie('modalLeave')) {
                 $('#popup-backdrop').addClass('popup-show');
                 setCookie('modalLeave', 1, 1);
             // };
-  }, 100000);
+  }, 60000);
 }
 document.onmousemove = resetTimer;
 document.onkeypress = resetTimer;
