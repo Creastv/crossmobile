@@ -1588,6 +1588,9 @@ footer .payments-icons svg {
 }
 
 @media (max-width:1199px) {
+    .offer-included-items-title {
+        font-size: 24px;
+    }
     .offer-included-single {
         /* flex-wrap: wrap; */
         gap:10px;
