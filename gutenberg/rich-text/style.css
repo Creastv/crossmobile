@@ -1,12 +1,12 @@
 .rich-text {
-    padding: 40px 0 40px;
+    padding: 40px 0 0px;
     position: relative;
 }
 iframe{
     border:0px;
 }
 .rich-text .rich-text-wrapper {
-    padding: 25px;
+    padding: 25px 25px 0 25px;
     border-radius: 10px;
     background: #FFF;
 }

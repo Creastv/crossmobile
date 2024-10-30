@@ -127,7 +127,7 @@ $(function () {
         setTimeout(() => {
             $('#popup-backdrop').addClass('popup-show');
             setCookie('modalShown', 1, 1);
-        }, 3000);
+        }, 10000);
     }
 })
 
@@ -163,7 +163,7 @@ function resetTimer(){
                 $('#popup-backdrop').addClass('popup-show');
                 setCookie('modalLeave', 1, 1);
             // };
-  }, 30000);
+  }, 100000);
 }
 document.onmousemove = resetTimer;
 document.onkeypress = resetTimer;
