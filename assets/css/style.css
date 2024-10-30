@@ -1954,7 +1954,10 @@ footer .payments-icons {
 .popup-container .modal-title {
     margin-left: 30%;
     text-align: left;
-    margin-bottom: 80px;
+    margin-bottom:30px;
+}
+.popup-container .modal-title h3 {
+    font-size: 38px;
 }
 
 .popup-container .cta-form-wrapper {
@@ -1964,7 +1967,7 @@ footer .payments-icons {
     align-items: center;
     margin-left: 15%;
     margin-right: 0;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .popup-container .cta-form {
@@ -2031,7 +2034,35 @@ footer .payments-icons {
 .popup-container .wpcf7-form {
     gap: 0 !important;
 }
-
+@media (max-width:1224px) {
+    .popup-bg{
+        width: 310px;
+    }
+    .popup-container{
+        max-width: 988px;
+    }
+    .popup-container .modal-title{
+        margin-left: 27%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .popup-container .modal-title h3{
+        font-size: 31px!important;
+    }
+    .popup-container .cta-form{
+        padding: 30px;
+        margin-left: 16%;
+    }
+    .popup-container .cta-form-wrapper{
+        width: 88%;
+        margin-bottom: 30px;
+        margin-left: 10%;
+    }
+    .popup-icon svg{
+        width: 100px;
+        height: auto;
+    }
+}
 @media (max-width:991px) {
     .goToMess {
         top:initial;
@@ -2075,6 +2106,8 @@ footer .payments-icons {
         text-align: center;
         margin-bottom: 40px;
     }
+    
+  
 
     .popup-container {
         /* height: 100svh; */
