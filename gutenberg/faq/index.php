@@ -7,16 +7,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
     <div class="container">
         <div class="faq-wrapper">
             <div class="faq-sidebar">
-                <h4>Tematy zapytań</h4>
-                <?php if (!empty(get_field('category'))) { ?>
-                    <div class="faq-categories">
-                        <?php foreach (get_field('category') as $key => $category) { ?>
-                            <h5 data-scroll="cat_<?php echo $key; ?>">
-                                <?php echo $category['title']; ?>
-                            </h5>
-                        <?php }; ?>
-                    </div>
-                <?php }; ?>
+
                 <div class="contact-block-inner">
                     <div>
                         <h5>Dział obsługi klienta</h5>

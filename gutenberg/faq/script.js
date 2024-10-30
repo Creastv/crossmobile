@@ -31,14 +31,16 @@ $(document).on('click', '[data-scroll]', function () {
         }, 1000); // Czas animacji w milisekundach
     }
 });
-$('.download-category[data-category="cat_0"]').toggleClass('active')
 $(document).on('click', '[data-category] .faq-cat-title', function () {
 
     let scrollToCategory = $(this).parent().data('category');
 
     let targetElement = $('[data-category="' + scrollToCategory + '"]');
 
-    $('.download-category').removeClass('active');
+
+    if ( ! $(this).parent().hasClass('active')) {
+        $('.download-category').removeClass('active');
+    }
 
     targetElement.toggleClass('active');
     
@@ -48,6 +50,4 @@ $(document).on('click', '[data-category] .faq-cat-title', function () {
             scrollTop: targetElement.offset().top - (navHeight + 30)
         }, 1000); // Czas animacji w milisekundach
     }
-
-console.log(targetElement)
 });
