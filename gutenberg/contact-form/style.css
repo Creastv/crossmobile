@@ -72,13 +72,14 @@
 
 
 
-.contact-form .cta-form h3 {
-    font-size: 31px;
+.contact-form .cta-form h4 {
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .contact-form .cta-form p {
+    color: #161616;
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -193,14 +194,38 @@
     }
     .contact-form .contact-form-wrapper{
         padding: 35px 0;
+        gap:15px
+    }
+    .contact-form .contact-form-wrapper>* {
+        padding: 15px;
+    }
+    .contact-form .cta-form-left-wrapper .cta-form{
+        padding: 15px;
+    }
+    .contact-form .cta-form-wrapper-inner{
+        padding: 80px 15px 140px;
+    }
+    .contact-form .form-right-image{
+        max-width: 150px;
+    }
+    .cta-form-left-wrapper  .contact-form input{
+        padding: 10px 20px;
+    }
+    .contact-form .wpcf7-textarea{
+        height: 100px;
+        margin: 0;
+    }
+    .contact-form .custom-icon{
+        left: 80%;
+        z-index: 0;
     }
 }
 @media (max-width:1199px) {
     .contact-data .contact-data-menu ul{
         justify-content: flex-start!important;
     }
-    .contact-form .contact-form-wrapper {
-        flex-wrap: wrap;
+    .contact-form .contact-form{
+        margin-top: 0px;
     }
 
     .contact-form .cta-form-left-wrapper,
@@ -216,32 +241,42 @@
         padding: 15px 0px;
     }
 
-    .contact-form .contact-form-wrapper>* {
-        padding: 15px;
+    .contact-form .cta-form-right-wrapper .cta-form{
+        padding: 0;
+        padding-top: 50px;
     }
 
     .contact-form .cta-form-wrapper-inner {
-        padding: 15px 15px 140px;
+        padding: 15px 15px;
         overflow: hidden;
     }
 
     .contact-form .cta-form-right-wrapper .cta-form {
-        max-width: 70%;
+        max-width: 100%;
     }
+    .contact-form .cta-form-right-wrapper .cta-form h3{
+        font-size: 28px;
+    }
+   
+
 }
 
 @media (max-width:991px) {
-
     .contact-form .cta-form h3 {
         font-size: 24px;
     }
-
-    .contact-form .wpcf7-form div .wpcf7-form-control-wrap {
-        width: 100%;
+    .contact-form .form-right-image{
+        max-width: 108px;
     }
 }
 
 @media (max-width:768px) {
+    .contact-form .contact-form-wrapper {
+        flex-wrap: wrap;
+    }
+    .contact-form .wpcf7-form div .wpcf7-form-control-wrap {
+        width: 100%;
+    }
     .contact-form .cta-form {
         padding: 10px;
     }
@@ -270,9 +305,9 @@
     .contact-form .form-right-image{
         display: none;
     }
-    .contact-form .contact-form-wrapper>*, .contact-form .contact-form-wrapper, .contact-form .cta-form-wrapper-inner{
+    /* .contact-form .contact-form-wrapper>*, .contact-form .contact-form-wrapper, .contact-form .cta-form-wrapper-inner{
         padding: 0;
-    }
+    } */
 }
 @media (max-width:480px) {
     .contact-form .cta-form-left-wrapper .cta-form, .contact-form .cta-form{

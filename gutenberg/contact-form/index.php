@@ -10,9 +10,9 @@ require dirname(__FILE__, 2) . '/defaults.php';
                 <?php if (!empty(get_field('form_left'))) { ?>
                     <div class="cta-form">
                         <?php if (!empty(get_field('title_left'))) { ?>
-                            <h3>
+                            <h4>
                                 <?php echo get_field('title_left'); ?>
-                            </h3>
+                            </h4>
                         <?php }; ?>
                         <?php if (!empty(get_field('subtitle_left'))) { ?>
                             <p>

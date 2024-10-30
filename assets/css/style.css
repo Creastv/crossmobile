@@ -1085,7 +1085,8 @@ footer .payments-icons {
 }
 
 .wpcf7-acceptance .wpcf7-list-item-label a {
-    color: #0451BD;
+    color: #E81F76;
+    text-decoration: underline;
 }
 
 .wpcf7-form-control-wrap {
