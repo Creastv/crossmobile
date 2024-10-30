@@ -1285,6 +1285,9 @@ footer .payments-icons svg {
     text-align: left;
     margin-bottom: 0;
 }
+.single-offer .hero-wrapper .hero-title h1 small{
+    font-size: 31px;
+}
 
 .single-offer .hero .custom-icon {
     left: 50%;
@@ -1662,6 +1665,7 @@ footer .payments-icons svg {
         line-height: 1!important;
         padding: 30px 0;
     }
+    
     .single-offer .hero-offer{
         /* width: 50%; */
         margin-top: -100px;
@@ -1785,8 +1789,11 @@ footer .payments-icons svg {
 @media (max-width:491px) {
     .single-offer .hero .hero-wrapper h1{
         font-size: 31px!important;
-        line-height: 1!important;
+        line-height: 1.2!important;
         /* margin-bottom: 20px; */
+    }
+    .single-offer .hero-wrapper .hero-title h1 small{
+        font-size: 21px;
     }
     .offer-included-items-wrap {
         margin-bottom: 30px;
