@@ -1342,7 +1342,7 @@ footer .payments-icons svg {
 
 .single-offer .offer-buttons {
     display: flex;
-    gap: 15px 40px;
+    gap: 14px 20px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -1351,11 +1351,11 @@ footer .payments-icons svg {
 }
 
 .single-offer .offer-buttons a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 100px;
 }
 
@@ -1578,10 +1578,13 @@ footer .payments-icons svg {
     }
     .single-offer .offer-buttons a{
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .single-offer .hero-offer{
         padding: 10px 10px 30px;
+    }
+    .single-offer .offer-gb{
+        gap:10px
     }
 
 
@@ -1619,6 +1622,11 @@ footer .payments-icons svg {
         padding:0 50px;
 
     }
+    .single-offer .offer-buttons a{
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    
     /* .single-offer .hero-offer {
         position: relative;
         top: auto;
