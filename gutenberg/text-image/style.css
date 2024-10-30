@@ -126,7 +126,7 @@
 .text-image .text-wrapper {
     width: 60%;
     flex: 1 auto;
-    color: var(--black-75, #5C5559);
+    color: #161616;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
