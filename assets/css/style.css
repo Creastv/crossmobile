@@ -910,6 +910,10 @@ footer .payments-icons {
     justify-content: flex-end;
     gap: 12px;
 }
+footer .payments-icons svg {
+    width: 55px;
+    height: auto;
+}
 
 @media (max-width:1199px) {
     footer {
