@@ -398,7 +398,7 @@
 
     .swiper-button-prev,
     .swiper-button-next {
-        opacity: 0;
+        opacity: 1;
     }
 
     .tab-wrapper:hover .swiper-button-prev,
