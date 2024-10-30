@@ -2153,9 +2153,9 @@ footer .payments-icons svg {
         width: 100% !important;
     }
 
-    .popup-icon {
+    /* .popup-icon {
         opacity: 0.5;
-    }
+    } */
     
 }
 @media (max-width:768px) {
