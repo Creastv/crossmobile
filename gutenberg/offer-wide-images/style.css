@@ -161,9 +161,14 @@
     .offer-wide-images .single-offer{
         padding: 15px;
     }
+    .offer-wide-images .custom-icon{
+        left: 10px;
+        top: 10px;
+    }
     .offer-wide-images .custom-icon svg{
         width: 31px;
         height: auto;
+       
     }
  
     .offer-wide-images .offer-wide-images-wrapper {
@@ -176,8 +181,16 @@
         font-size: 34px;
     } */
 }
+@media (max-width:1300px) {
+    .offer-wide-images .single-offer .offer-left .offer-title h3{
+        font-size: 21px!important;
+    }
 
+}
 @media (max-width:1199px) {
+    .offer-wide-images .single-offer .offer-left .offer-title h3{
+        font-size: 31px!important;
+    }
 
     .offer-wide-images .single-offer {
         flex-wrap: wrap;
