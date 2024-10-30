@@ -239,7 +239,7 @@
     </a>
 </div> -->
 
-<?php if (!empty(get_field('modal_show', 'option'))) { ?>
+<?php if (!empty(get_field('modal_show', 'option')) && !is_page(array(516, 511))) { ?>
 
     <div class="popup-btn">
         <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
