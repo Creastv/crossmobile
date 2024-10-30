@@ -365,11 +365,12 @@
 .swiper-button-prev,
 .swiper-button-next {
     border-radius: 100px;
-    border: 1px solid var(--black-75, #5C5559);
+    border: 1px solid #fff;
+    background-color: #0451BD;
     width: 70px;
     height: 70px;
     transition: border .3s ease, background .3s ease, box-shadow .3s ease, opacity .3s ease;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .swiper-button-prev:hover,
@@ -382,6 +383,10 @@
 .swiper-button-prev svg,
 .swiper-button-next svg {
     max-width: 25px;
+}
+.swiper-button-prev svg path,
+.swiper-button-next svg path{
+    fill:#fff;
 }
 
 @media (max-width:1770px) {
