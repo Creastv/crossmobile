@@ -234,7 +234,7 @@
     </svg>
 </div>
 <div class="goToMess">
-    <a href="https://crossmobile.jffrbblxkx.cfolks.pl/kontakt/" target="_blank">
+    <a href="https://crossmobile.jffrbblxkx.cfolks.pl/kontakt/">
         <img src="<?php bloginfo('template_url'); ?>/assets/images/mailus.png" alt="Napisz do nas!">
     </a>
 </div>
