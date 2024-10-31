@@ -233,11 +233,11 @@
         </defs>
     </svg>
 </div>
-<!-- <div class="goToMess">
-    <a href="https://m.me/CrossMobileEU/" target="_blank">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/facebook.png" alt="Napisz do nas!">
+<div class="goToMess">
+    <a href="https://crossmobile.jffrbblxkx.cfolks.pl/kontakt/" target="_blank">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/mailus.png" alt="Napisz do nas!">
     </a>
-</div> -->
+</div>
 
 <?php if (!empty(get_field('modal_show', 'option')) && !is_page(array(516, 511))) { ?>
 
