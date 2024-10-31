@@ -730,6 +730,7 @@
     }
     
     .single-offer.theme-5 .offer-custom-price span {
+        font-size: 140px;
 }
 }
 @media (max-width:1199px) {
