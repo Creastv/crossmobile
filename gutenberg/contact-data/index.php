@@ -15,6 +15,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
                 </h4>
                 <div class="contact-block-inner">
                     <div class="contact-links">
+
                         <svg width="68" height="63" viewBox="0 0 68 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_259_3388)">
                                 <path
@@ -64,6 +65,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
                             </a>
                         </div>
                     </div>
+
                     <?php if (get_field('messenger_link')) : ?>
                         <a href="<?php echo get_field('messenger_link'); ?>" class="contact-mess">
                             <?php if (!get_field('messenger_icon')) { ?>
@@ -90,6 +92,7 @@ require dirname(__FILE__, 2) . '/defaults.php';
                             </p>
                         </a>
                     <?php endif; ?>
+
                 </div>
             </div>
         </div>

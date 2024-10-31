@@ -122,22 +122,22 @@ $(function () {
 
 
 // Wyświetlenie modala na 30s po załadowaniu strony
-$(function () {
-    if (!getCookie('modalShown')) {
-        setTimeout(() => {
-            $('#popup-backdrop').addClass('popup-show');
-            setCookie('modalShown', 1, 1);
-        }, 10000);
-    }
-})
+// $(function () {
+//     if (!getCookie('modalShown')) {
+//         setTimeout(() => {
+//             $('#popup-backdrop').addClass('popup-show');
+//             setCookie('modalShown', 1, 1);
+//         }, 10000);
+//     }
+// })
 
 // Wyświetlenie modala na wyjazd myszką ze strony
-// $(document).on('mouseleave', function (e) {
-//     if (!getCookie('modalLeave')) {
-//         $('#popup-backdrop').addClass('popup-show');
-//         setCookie('modalLeave', 1, 1);
-//     };
-// });
+$(document).on('mouseleave', function (e) {
+    if (!getCookie('modalLeave')) {
+        $('#popup-backdrop').addClass('popup-show');
+        setCookie('modalLeave', 1, 1);
+    };
+});
 
 // $("p").hover(function(){
 
@@ -163,7 +163,7 @@ function resetTimer(){
                 $('#popup-backdrop').addClass('popup-show');
                 setCookie('modalLeave', 1, 1);
             // };
-  }, 60000);
+  }, 120000);
 }
 document.onmousemove = resetTimer;
 document.onkeypress = resetTimer;

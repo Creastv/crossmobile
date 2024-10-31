@@ -233,13 +233,14 @@
         </defs>
     </svg>
 </div>
-<div class="goToMess">
-    <a href="https://crossmobile.jffrbblxkx.cfolks.pl/kontakt/">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/mailus.png" alt="Napisz do nas!">
-    </a>
-</div>
-
-<?php if (!empty(get_field('modal_show', 'option')) && !is_page(array(516, 511))) { ?>
+<?php if (!is_page(array(516, 511, 16))) { ?>
+    <div class="goToMess">
+        <a href="https://crossmobile.jffrbblxkx.cfolks.pl/kontakt/">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/mailus.png" alt="Napisz do nas!">
+        </a>
+    </div>
+<?php } ?>
+<?php if (!empty(get_field('modal_show', 'option')) && !is_page(array(516, 511, 16))) { ?>
 
     <div class="popup-btn">
         <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">

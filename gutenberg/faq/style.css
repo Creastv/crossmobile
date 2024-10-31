@@ -106,8 +106,8 @@
  }
 .faq .contact-mess {
      border-radius: 10px;
-     background: #e81f76;
-     border:2px solid #E81F76;
+     background: #0FA2EC;
+     border:2px solid #0FA2EC;
      transition: all 0.3s linear;
      padding: 10px 15px;
      display: flex;
@@ -124,13 +124,13 @@
  }
 .faq .contact-mess:hover {
      background:none;
-     border:2px solid #E81F76;
+     border:2px solid #0FA2EC;
  }
 .faq .contact-mess:hover p {
-     color:#E81F76;
+     color:#0FA2EC;
  }
 .faq .contact-mess:hover svg path {
-     fill:#E81F76;
+     fill:#0FA2EC;
  }
 .faq .contact-links {
     display: flex;

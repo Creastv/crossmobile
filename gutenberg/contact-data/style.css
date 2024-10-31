@@ -62,8 +62,8 @@
 
 .contact-data .contact-mess {
     border-radius: 20px;
-    background:#E81F76;
-    border:2px solid #E81F76;
+    background:#0FA2EC;
+    border:2px solid #0FA2EC;
     transition: all 0.3s linear;
     padding: 10px 15px;
     display: flex;
@@ -75,30 +75,35 @@
     font-size: 18px;
     font-weight: 700;
     max-width: 392px;
+    text-align: center;
 }
 .contact-data .contact-mess p{
     color:#fff;
     transition: all 0.3s linear;
+    font-size: 21px;
 }
 
 .contact-data .contact-mess:hover {
     background:none;
-    border:2px solid #E81F76;
+    border:2px solid #0FA2EC;
 }
 .contact-data .contact-mess:hover p {
-    color:#E81F76;
+    color:#0FA2EC;
 }
 .contact-data .contact-mess:hover svg path {
-    fill:#E81F76;
+    fill:#0FA2EC;
 }
 
 .contact-data .contact-links {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px 40px;
+    padding: 20px 20px;
     border-radius: 20px;
     border: 1px solid var(--black-50, #C2C2C2);
+}
+.contact-data .contact-links > div {
+    display: flex;
 }
 
 .contact-data .contact-links div {
@@ -161,6 +166,9 @@
 
 @media (max-width:460px) {
     .contact-data .contact-block-inner{
+        flex-wrap: wrap;
+    }
+    .contact-data .contact-links{
         flex-wrap: wrap;
     }
 }
