@@ -1586,7 +1586,9 @@ footer .payments-icons svg {
     .single-offer .offer-gb{
         gap:10px
     }
-
+    .single-offer .hero-offer h2{
+        font-size: 24px!important;
+    }
 
 }
 
@@ -1672,7 +1674,7 @@ footer .payments-icons svg {
 
 @media (max-width:1024px) {
     .single-offer .hero-offer h2{
-        font-size: 24px;
+        font-size: 24px!important;
     }
     .single-offer .hero .hero-wrapper h1{
         font-size: 51px!important;
@@ -1731,6 +1733,9 @@ footer .payments-icons svg {
     }
     .included-description-wrapper h2{
         font-size: 21px;
+    }
+    .included-description-wrapper h3{
+        font-size: 18px;
     }
     .single-offer .hero .custom-icon {
         left: 50% !important;
