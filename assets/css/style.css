@@ -1589,6 +1589,9 @@ footer .payments-icons svg {
     .single-offer .hero-offer h2{
         font-size: 24px!important;
     }
+    .included-description-wrapper h2{
+        font-size: 24px ;
+    }
 
 }
 
@@ -1667,8 +1670,11 @@ footer .payments-icons svg {
     .included-description{
         gap:10px
     }
-    .single-offer .hero-offer h2{
-
+    .included-description-wrapper h2{
+        font-size: 21px ;
+    }
+    .included-description-wrapper h3{
+        font-size: 18px ;
     }
 }
 
