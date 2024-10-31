@@ -56,21 +56,40 @@
     border: 1px solid var(--black-50, #C2C2C2); */
     display: flex;
     gap: 15px 30px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
 .contact-data .contact-mess {
-    border-radius: 10px;
-    background: #F2F2F2;
-    padding: 10px 25px;
+    border-radius: 20px;
+    background:#E81F76;
+    border:2px solid #E81F76;
+    transition: all 0.3s linear;
+    padding: 10px 15px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 21px;
+    justify-content: center;
+    gap: 15px;
     color: #000;
     font-size: 18px;
     font-weight: 700;
     max-width: 392px;
+}
+.contact-data .contact-mess p{
+    color:#fff;
+    transition: all 0.3s linear;
+}
+
+.contact-data .contact-mess:hover {
+    background:none;
+    border:2px solid #E81F76;
+}
+.contact-data .contact-mess:hover p {
+    color:#E81F76;
+}
+.contact-data .contact-mess:hover svg path {
+    fill:#E81F76;
 }
 
 .contact-data .contact-links {
@@ -118,6 +137,7 @@
     .contact-data .contact-links a {
         font-size: 22px;
     }
+   
 
     /* .contact-data .contact-block-inner {
         padding: 20px 15px;
@@ -136,5 +156,11 @@
 
     .contact-data .contact-links svg {
         max-width: 45px;
+    }
+}
+
+@media (max-width:460px) {
+    .contact-data .contact-block-inner{
+        flex-wrap: wrap;
     }
 }
