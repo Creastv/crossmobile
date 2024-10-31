@@ -181,14 +181,15 @@
                     <?php echo wp_get_attachment_image(142, 'medium', 0, ['class' => '']); ?>
                 </div>
             </div>
-            <?php if (!empty(get_field('footer_button', 'option'))) { ?>
-                <div class="footer-btn">
-                    <a href="<?php echo get_field('footer_button', 'option')['url'] ? get_field('footer_button', 'option')['url'] : '#'; ?>" target="<?php echo get_field('footer_button', 'option')['target'] ? get_field('footer_button', 'option')['target'] : '_self'; ?>" title="<?php echo get_field('footer_button', 'option')['title'] ? get_field('footer_button', 'option')['title'] : ''; ?>">
-                        <?php echo get_field('footer_button', 'option')['title'] ? get_field('footer_button', 'option')['title'] : ''; ?>
-                    </a>
-                </div>
-            <?php }; ?>
+
         </div>
+        <?php if (!empty(get_field('footer_button', 'option'))) { ?>
+            <div class="footer-btn">
+                <a href="<?php echo get_field('footer_button', 'option')['url'] ? get_field('footer_button', 'option')['url'] : '#'; ?>" target="<?php echo get_field('footer_button', 'option')['target'] ? get_field('footer_button', 'option')['target'] : '_self'; ?>" title="<?php echo get_field('footer_button', 'option')['title'] ? get_field('footer_button', 'option')['title'] : ''; ?>">
+                    <?php echo get_field('footer_button', 'option')['title'] ? get_field('footer_button', 'option')['title'] : ''; ?>
+                </a>
+            </div>
+        <?php }; ?>
         <div class="footer-copy">
             <p>Copyright © <?php echo date('Y'); ?> Wszelkie prawa zastrzeżone | Projekt i wykonanie
                 <a href="https://roial.pl/" target="_blank">
