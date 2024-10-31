@@ -160,6 +160,10 @@ $mySectionID = 'section_' .  rand(100, 1000) * rand(10, 20);
                 loop: true,
                 slidesPerView: 1,
                 spaceBetween: 10,
+                autoplay: {
+                    delay: 4500,
+                    disableOnInteraction: false,
+                },
                 pagination: {
                     el: "#<?php echo $mySectionID; ?> .swiper-pagination",
                     clickable: true,

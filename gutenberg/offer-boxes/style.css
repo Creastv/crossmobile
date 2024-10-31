@@ -388,6 +388,12 @@
 .swiper-button-next svg path{
     fill:#fff;
 }
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+}
+
+
 
 @media (max-width:1770px) {
 
