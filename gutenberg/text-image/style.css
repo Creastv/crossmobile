@@ -3,6 +3,10 @@
     position: relative;
     /* overflow: hidden; */
 }
+.page-id-450 .text-image {
+    padding: 0;
+}
+
 
 .text-image .text-image-wrapper {
     display: flex;
