@@ -132,12 +132,12 @@ $(function () {
 // })
 
 // Wyświetlenie modala na wyjazd myszką ze strony
-$(document).on('mouseleave', function (e) {
-    if (!getCookie('modalLeave')) {
-        $('#popup-backdrop').addClass('popup-show');
-        setCookie('modalLeave', 1, 1);
-    };
-});
+// $(document).on('mouseleave', function (e) {
+//     if (!getCookie('modalLeave')) {
+//         $('#popup-backdrop').addClass('popup-show');
+//         setCookie('modalLeave', 1, 1);
+//     };
+// });
 
 // $("p").hover(function(){
 
