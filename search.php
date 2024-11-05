@@ -1,5 +1,15 @@
-<?php get_header(); ?>
-<section class="hero error-404">
+<?php
+
+/**
+ * The Search template file
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Dosth
+ */
+get_header();
+?>
+<section class="hero">
     <div class="custom-icon icon-left">
         <svg width="357" height="340" viewBox="0 0 357 340" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_47_1889)">
@@ -16,17 +26,33 @@
     </div>
     <div class="container container-md">
         <div class="hero-wrapper">
-            <h1 class="page-title">Błąd 404</h1>
-            <p>Przepraszamy, strona nie została znaleziona</p>
-            <br>
-            <div class="btn-wrapper">
-                <a href="<?php echo get_home_url(); ?>" class="btn btn-primary" title="Przejdź do strony głównej">
-                    Przejdź do strony głównej
-                </a>
-            </div>
+            <h1 class="page-title"><?php _e('Wyniki wyszukiwania dla:', 'nd_dosth'); ?> <em><?php echo get_search_query(); ?></em></h1>
+            <?php echo get_search_form(); ?>
+            <?php if (!have_posts()): ?>
+                <p><?php _e('Nic nie znaleziono', 'nd_dosth'); ?></p>
+                <br>
+            <?php endif; ?>
         </div>
     </div>
 </section>
-<section></section>
+<section class="search-posts">
+    <div class="container">
+        <div class="posts">
+            <?php if (have_posts()): ?>
+                <?php while (have_posts()): ?>
+                    <?php the_post(); ?>
+                    <div class="search-result">
+                        <h2><?php the_title(); ?></h2>
+                        <a href="<?php the_permalink(); ?>" class="read-more-link">
+                            Czytaj więcej
+                        </a>
+                    </div>
+                <?php endwhile; ?>
+                <?php the_posts_pagination(); ?>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
+
 
 <?php get_footer(); ?>
