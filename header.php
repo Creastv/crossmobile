@@ -16,7 +16,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN9MXYRT4Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HN9MXYRT4Q');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://www.crossmobile.pl -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 3669424,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '302174599233088');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=302174599233088&ev=PageView&noscript=1" /></noscript>
     <?php wp_head(); ?>
 
 </head>
@@ -56,8 +109,26 @@
                             'walker'          => new WP_Bootstrap_Navwalker(),
                         ));
                         ?>
+
                         <?php if (!empty(get_field('header_button_external', 'option'))) { ?>
                             <div class="nav-buttons">
+                                <div class="search-slider">
+                                    <div class="search-slider__icon">
+                                        <svg width="20" height="20" class="search-icon" role="img" viewBox="2 9 20 5" focusable="false" aria-label="Search">
+                                            <path fill="#ffff" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="search-slider__form">
+                                        <form id="search-form" class="search-form" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                                            <input type="text" name="s" placeholder="Szukaj..." aria-label="Szukaj">
+                                            <button type="submit">
+                                                <svg width="20" height="20" class="search-icon" role="img" viewBox="2 9 20 5" focusable="false" aria-label="Search">
+                                                    <path fill="#ffff" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <a href="<?php echo get_field('header_button_external', 'option')['url'] ? get_field('header_button_external', 'option')['url'] : '#'; ?>" class="button-external" title="<?php echo get_field('header_button_external', 'option')['title'] ? get_field('header_button_external', 'option')['title'] : ''; ?>" target="<?php echo get_field('header_button_external', 'option')['target'] ? get_field('header_button_external', 'option')['target'] : '_self'; ?>">
                                     <?php echo get_field('header_button_external', 'option')['title'] ? get_field('header_button_external', 'option')['title'] : ''; ?>
                                     <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,6 +139,7 @@
                                 </a>
                             </div>
                         <?php }; ?>
+
                     </div>
 
                 </div>

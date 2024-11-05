@@ -35,10 +35,11 @@ get_header();
         </div>
     </div>
 </section>
+
 <section class="search-posts">
-    <div class="container">
-        <div class="posts">
-            <?php if (have_posts()): ?>
+    <?php if (have_posts()): ?>
+        <div class="container">
+            <div class="posts">
                 <?php while (have_posts()): ?>
                     <?php the_post(); ?>
                     <div class="search-result">
@@ -49,9 +50,11 @@ get_header();
                     </div>
                 <?php endwhile; ?>
                 <?php the_posts_pagination(); ?>
-            <?php endif; ?>
+
+            </div>
         </div>
-    </div>
+
+    <?php endif; ?>
 </section>
 
 

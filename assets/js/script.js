@@ -139,11 +139,6 @@ $(function () {
 //     };
 // });
 
-// $("p").hover(function(){
-
-// $('input[name="phone"]').attr('placeholder', 'Texto de marcador de posición');
-// })
-
 $(document).ready(function(){
     $(".cta-form").hover(function(){
         $('input[name="phone"]').attr('placeholder', '+48XXXXXXXXX');
