@@ -11,9 +11,8 @@ if (! empty($block['anchor'])) {
             <div class="faq__wraper">
                 <?php if ($colOne) { ?>
                     <div class="faq-questions-wrapper">
-                        <?php foreach ($colOne['accordion'] as $acc) { ?>
-
-                            <div class="faq-single">
+                        <?php foreach ($colOne['accordion'] as $index => $acc) { ?>
+                            <div class="faq-single <?php echo $index === 0 ? 'active' : ''; ?>">
                                 <h4>
                                     <?php echo $acc['accordion_name']; ?>
                                     <span>
@@ -27,7 +26,8 @@ if (! empty($block['anchor'])) {
                                         </svg>
                                     </span>
                                 </h4>
-                                <div class="faq-answer" style="display:none;">
+                                <div class="faq-answer"
+                                    style="<?php echo $index === 0 ? 'display:block;' : 'display:none;'; ?>">
                                     <?php echo $acc['accordion_content']; ?>
                                 </div>
                             </div>
