@@ -235,11 +235,11 @@
     </svg>
 </div>
 <?php if (!is_page(array(516, 511, 16))) { ?>
-    <div class="goToMess">
-        <a href="https://crossmobile.jffrbblxkx.cfolks.pl/kontakt/">
+    <!-- <div class="goToMess">
+        <a href="https://www.crossmobile.pl/kontakt/">
             <img src="<?php bloginfo('template_url'); ?>/assets/images/mailus.png" alt="Napisz do nas!">
         </a>
-    </div>
+    </div>-->
 <?php } ?>
 <?php if (!empty(get_field('modal_show', 'option')) && !is_page(array(516, 511, 16))) { ?>
 

@@ -270,6 +270,34 @@ function offer_boxes_assets()
     wp_enqueue_style('offer-boxes',  get_template_directory_uri() . '/gutenberg/offer-boxes/style.css', array(), '1.3', true);
 };
 acf_register_block_type(array(
+    'name'              => 'acord',
+    'title'             => __('Najczęściej zadawane pytania'),
+    'description'       => __('FAQ'),
+    'category'          => 'kamil-theme',
+    'icon'              => 'media-text',
+    'render_template'   => 'gutenberg/acord/index.php',
+    'enqueue_style'     => get_template_directory_uri() . '/gutenberg/acord/style.css',
+    'enqueue_assets'    => 'acord_assets',
+    'example'  => array(
+        'attributes' => array(
+            'mode' => 'preview',
+            // 'data' => array(
+            //     'preview_image_help' => get_template_directory_uri() . '/gutenberg/acord/preview.png',
+            // )
+        )
+    ),
+    'mode' => 'preview',
+    'supports' => array(
+        'align' => false,
+        'mode' => true,
+    ),
+));
+function acord_assets()
+{
+    wp_enqueue_script('acord-script-0', get_template_directory_uri() . '/gutenberg/acord/script.js', array(), '', true);
+    wp_enqueue_style('acord',  get_template_directory_uri() . '/gutenberg/acord/style.css', array(), '1.3', true);
+};
+acf_register_block_type(array(
     'name'              => 'offer-horizontal-images',
     'title'             => __('Offer horizontal images'),
     'description'       => __('offer-horizontal-images'),
@@ -306,6 +334,29 @@ acf_register_block_type(array(
             'mode' => 'preview',
             'data' => array(
                 'preview_image_help' => get_template_directory_uri() . '/gutenberg/offer-links/preview.png',
+            )
+        )
+    ),
+    'mode' => 'preview',
+    'supports' => array(
+        'align' => false,
+        'mode' => true,
+    ),
+));
+acf_register_block_type(array(
+    'name'              => 'steps',
+    'title'             => __('3 proste kroki'),
+    'description'       => __('steps'),
+    'category'          => 'kamil-theme',
+    'icon'              => 'media-text',
+    'render_template'   => 'gutenberg/steps/index.php',
+    'enqueue_style'     => get_template_directory_uri() . '/gutenberg/steps/style.css',
+    'enqueue_assets'    => 'offer_links_assets',
+    'example'  => array(
+        'attributes' => array(
+            'mode' => 'preview',
+            'data' => array(
+                'preview_image_help' => get_template_directory_uri() . '/gutenberg/steps/preview.png',
             )
         )
     ),
