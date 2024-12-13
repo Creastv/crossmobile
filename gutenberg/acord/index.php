@@ -10,29 +10,30 @@ if (! empty($block['anchor'])) {
         <div class="faq js">
             <div class="faq__wraper">
                 <?php if ($colOne) { ?>
-                    <div class="faq-questions-wrapper">
-                        <?php foreach ($colOne['accordion'] as $index => $acc) { ?>
-                            <div class="faq-single <?php echo $index === 0 ? 'active' : ''; ?>">
-                                <h4>
-                                    <?php echo $acc['accordion_name']; ?>
-                                    <span>
-                                        <svg class="fa-horizontal" width="34" height="1" viewBox="0 0 34 1" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M33.4345 0.5H0.0625" stroke="#5C5559"></path>
-                                        </svg>
-                                        <svg class="fa-vertical" width="2" height="37" viewBox="0 0 2 37" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.748045 36.5L0.748047 0.5" stroke="#5C5559"></path>
-                                        </svg>
-                                    </span>
-                                </h4>
-                                <div class="faq-answer"
-                                    style="<?php echo $index === 0 ? 'display:block;' : 'display:none;'; ?>">
-                                    <?php echo $acc['accordion_content']; ?>
-                                </div>
-                            </div>
-                        <?php } ?>
+                <div class="faq-questions-wrapper">
+                    <?php foreach ($colOne['accordion'] as $index => $acc) { ?>
+                    <div class="faq-single <?php echo $index === 0 ? 'active' : ''; ?>">
+                        <h4><b>
+                                <?php echo $acc['accordion_name']; ?>
+                            </b>
+                            <span>
+                                <svg class="fa-horizontal" width="34" height="1" viewBox="0 0 34 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33.4345 0.5H0.0625" stroke="#5C5559"></path>
+                                </svg>
+                                <svg class="fa-vertical" width="2" height="37" viewBox="0 0 2 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.748045 36.5L0.748047 0.5" stroke="#5C5559"></path>
+                                </svg>
+                            </span>
+                        </h4>
+                        <div class="faq-answer"
+                            style="<?php echo $index === 0 ? 'display:block;' : 'display:none;'; ?>">
+                            <?php echo $acc['accordion_content']; ?>
+                        </div>
                     </div>
+                    <?php } ?>
+                </div>
                 <?php } ?>
             </div>
 
@@ -57,5 +58,5 @@ foreach ($colOne['accordion'] as $acc) {
 }
 ?>
 <script type="application/ld+json">
-    <?php echo json_encode($faqSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+<?php echo json_encode($faqSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
 </script>
